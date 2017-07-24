@@ -1,0 +1,11 @@
+{
+    "event": {
+        "header": {
+            "namespace": "AudioPlayer",
+            "name": "PlaybackQueueCleared",
+            "messageId": "{{MESSAGE_ID_STRING}}"
+        },
+        "payload": {
+        }
+    }
+} 

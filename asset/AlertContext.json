@@ -1,0 +1,10 @@
+{
+ "header": {
+    "namespace": "Alerts",
+    "name": "AlertsState"
+ },
+ "payload": {
+    "allAlerts": [],
+    "activeAlerts": []
+ }
+} 

@@ -1,0 +1,13 @@
+{
+ "header": {
+    "namespace": "AudioPlayer",
+    "name": "PlaybackState"
+ },
+ "payload": {
+    "token": "{{TOKEN_STRING}}" ,
+    "offsetInMilliseconds": "{{MS}}" ,
+    "playerActivity": "{{ACTIVITY_STRING}}"
+ }
+}
+
+

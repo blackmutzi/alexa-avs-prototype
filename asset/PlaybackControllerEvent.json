@@ -1,0 +1,18 @@
+{
+    "context": [
+        {{Alerts.AlertsState}},
+        {{AudioPlayer.PlaybackState}},
+        {{Speaker.VolumeState}},
+        {{SpeechSynthesizer.SpeechState}}
+        {{SpeechRecognizer.RecognizerState}}
+    ],
+    "event": {
+        "header": {
+            "namespace": "PlaybackController",
+            "name": "{{EVENT_NAME}}",
+            "messageId": "{{STRING}}"
+        },
+        "payload": {
+        }
+    }
+}

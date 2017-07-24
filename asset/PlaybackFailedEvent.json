@@ -1,0 +1,21 @@
+{
+    "event": {
+        "header": {
+            "namespace": "AudioPlayer",
+            "name": "PlaybackFailed",
+            "messageId": "{{MESSAGE_ID_STRING}}"
+        },
+        "payload": {
+            "token": "{{PAYLOAD_TOKEN_STRING}}",
+            "currentPlaybackState": {
+                "token": "{{STATE_TOKEN_STRING}}",
+                "offsetInMilliseconds": "{{OFFSET_MS}}",
+                "playerActivity": "{{ACTIVITY_STRING}}"
+            },
+            "error": {
+                "type": "{{ERROR_TYPE_STRING}}",
+                "message": "{{ERROR_MSG_STRING}}"
+            }
+        }
+    }
+} 

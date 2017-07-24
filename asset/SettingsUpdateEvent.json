@@ -1,0 +1,17 @@
+{
+    "event": {
+        "header": {
+            "namespace": "Settings",
+            "name": "SettingsUpdated",
+            "messageId": "{{MESSAGE_ID_STRING}}"
+        },
+        "payload": {
+            "settings": [
+                {
+                    "key": "{{KEY_STRING}}",
+                    "value": "{{VALUE_STRING}}"
+                }
+            ]
+        }    
+    }
+} 

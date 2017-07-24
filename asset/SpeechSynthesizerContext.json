@@ -1,0 +1,11 @@
+{
+     "header": {
+          "namespace": "SpeechSynthesizer",
+          "name": "SpeechState"
+      },
+      "payload": {
+          "token": "{{TOKEN_STRING}}",
+          "offsetInMilliseconds": "{{MS}}",
+          "playerActivity": "{{ACTIVITY_STRING}}"
+      }
+}
