@@ -5,9 +5,11 @@ Alexa Voice Service (AVS) client in C++ for RaspberryPI or any Linux Distributio
 Alexa Voice Service (AVS) is Amazon’s intelligent voice recognition and natural language understanding service that allows you as a developer to voice-enable any connected device that has a microphone and speaker.
 # What you need?
 A Linux Distribution with PulseAudio Support. Project is tested with Gentoo(x86_64) and Raspbian(ARMv7).
-Amazon Developer Account
+Amazon Developer Account.
 Follow the steps [here](https://github.com/alexa/alexa-avs-sample-app/wiki/Raspberry-Pi) to create a security profile.
 From Security Profile, you need ProductID, ClientID, and ClientSecret.
+And a WakeWordEngine Client from [here]( https://github.com/alexa/alexa-avs-sample-app/tree/master/samples/wakeWordAgent ).
+
 # Download it
 ```sh
 git clone https://github.com/blackmutzi/alexa-avs-prototype
