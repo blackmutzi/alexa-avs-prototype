@@ -27,7 +27,7 @@ make -j2
 * libssl-dev ( version 1.0.2 - ALPN h2 Protocol needed ) - TLSv1.2
 * libboost-all-dev ( version 1.63 required )
 * libasound2-dev 
-* libnghttp2 ( version 1.22.0 or higher ) 
+* libnghttp2-dev ( version 1.22.0 or higher ) 
 # AVS Configuration
 #### First Step
 go to config directory and modify config.json file 
