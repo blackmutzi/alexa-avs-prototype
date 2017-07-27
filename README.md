@@ -50,15 +50,14 @@ And Restart again AVS-Prototype. FINISH Configuration. AVS-Prototpye Client is n
 * libboost-all-dev version 1.62 - compile error 
 * libnghttp2-dev version 0.6.4.2 - to much nghttp2 Bugs ( required 1.22.0 or higher ) 
 * libssl-dev version 1.0.1 - ALPN protocol: h2 is not negotiated error message ( required version 1.0.2 )
-# Solution for libssl-dev and libnghttp2-dev
-* add [jessie-backports](https://github.com/superjamie/lazyweb/wiki/Raspberry-Pi-Debian-Backports) repository
-* add stretch repository 
-* deb http://httpredir.debian.org/debian jessie-backports main contrib non-free
-* deb http://httpredir.debian.org/debian stretch main contrib non-free
+# solution for libssl-dev and libnghttp2-dev
+add two [repositorys](https://github.com/superjamie/lazyweb/wiki/Raspberry-Pi-Debian-Backports) stretch and jessie-backports into /etc/apt/sources.list file.
+get libssl-dev and libnghttp2-dev
 ```sh
 apt-get -t jessie-backports install libssl-dev
 apt-get -t stretch install libnghttp2-dev
 ```
+after remove repositorys and run apt-get update. FINISH.  
 # Alexa Voice Service Features ( This is work in progress )
 * ALERT ( [AlertInterface](https://developer.amazon.com/public/solutions/alexa/alexa-voice-service/reference/alerts) )
 * Audioplayer ( [Audioplayer](https://developer.amazon.com/public/solutions/alexa/alexa-voice-service/reference/audioplayer) )
