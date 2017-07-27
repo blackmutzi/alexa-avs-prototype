@@ -46,6 +46,6 @@ the AVS-Client show you a link, copy it.
 And login into the Amazon Security Profile Website. Then copy den code_grant key and save it into the config.json.
 And Restart again AVS-Prototype. FINISH Configuration. AVS-Prototpye Client is now permanent READY.
 # Alexa Voice Service Features ( This is work in progress )
-* ALARM or TIMER ( [AlertInterface](https://developer.amazon.com/public/solutions/alexa/alexa-voice-service/reference/alerts) )
-* Music Streaming ( [Audioplayer](https://developer.amazon.com/public/solutions/alexa/alexa-voice-service/reference/audioplayer) )
-* Notifications ( [NotificationInterface](https://developer.amazon.com/public/solutions/alexa/alexa-voice-service/reference/notifications) ) 
+* ALERT ( [AlertInterface](https://developer.amazon.com/public/solutions/alexa/alexa-voice-service/reference/alerts) )
+* Audioplayer ( [Audioplayer](https://developer.amazon.com/public/solutions/alexa/alexa-voice-service/reference/audioplayer) )
+* Notification ( [NotificationInterface](https://developer.amazon.com/public/solutions/alexa/alexa-voice-service/reference/notifications) ) 
