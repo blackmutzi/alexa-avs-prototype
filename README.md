@@ -51,7 +51,7 @@ And Restart again AVS-Prototype. FINISH Configuration. AVS-Prototpye Client is n
 * libnghttp2-dev version 0.6.4.2 ( to much nghttp2 Bugs ) ( required 1.22.0 or higher ) 
 * libssl-dev version 1.0.1 ( ALPN protocol: h2 is not negotiated error message ) ( required version 1.0.2 )
 # Solution for libssl-dev and libnghttp2-dev
-[add jessie-backports](https://github.com/superjamie/lazyweb/wiki/Raspberry-Pi-Debian-Backports)
+add [jessie-backports](https://github.com/superjamie/lazyweb/wiki/Raspberry-Pi-Debian-Backports) repository 
 # Alexa Voice Service Features ( This is work in progress )
 * ALERT ( [AlertInterface](https://developer.amazon.com/public/solutions/alexa/alexa-voice-service/reference/alerts) )
 * Audioplayer ( [Audioplayer](https://developer.amazon.com/public/solutions/alexa/alexa-voice-service/reference/audioplayer) )
