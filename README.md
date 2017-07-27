@@ -1,6 +1,6 @@
 [![N|Solid](https://github.com/alexa/alexa-avs-sample-app/wiki/assets/alexa-logo-3.png)](https://developer.amazon.com/de/alexa-voice-service)
 # alexa-avs-prototype ( C++ )
-Alexa Voice Service (AVS) client in C++ for RaspberryPI or any Linux Distribution -  This is a work in progress.
+Alexa Voice Service (AVS) client in C++ for raspberry pi or any Linux Distribution -  This is a work in progress.
 # What is AVS?
 Alexa Voice Service (AVS) is Amazon’s intelligent voice recognition and natural language understanding service that allows you as a developer to voice-enable any connected device that has a microphone and speaker.
 # What you need?
