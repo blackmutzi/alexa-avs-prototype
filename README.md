@@ -21,7 +21,7 @@ qmake AVS-Prototype.pro
 make -j2
 ```
 # Project DEPENDS ( debian packages )
-* libevent-dev
+* libevent-dev ( 2.0.5 )
 * libmp3lame-dev
 * libcurl-dev ( version 7.54.0 or higher )
 * libssl-dev ( version 1.0.2 - ALPN h2 Protocol needed ) - TLSv1.2
