@@ -45,7 +45,7 @@ And Restart again AVS-Prototype. FINISH Configuration. AVS-Prototpye Client is n
 * libssl-dev ( version 1.0.2 - ALPN h2 Protocol needed )
 * libboost-all-dev ( tested version with 1.55 , 1.63 )
 * libasound2-dev ( version 1.0.28 )
-* libnghttp2-dev ( tested version 1.22.0 or higher )   
+* libnghttp2-dev ( version 1.22.0 or higher )   
 # Known Bugs:
 * libboost-all-dev version 1.62  ( compile error ) 
 * libnghttp2-dev version 0.6.4.2 ( to much nghttp2 Bugs ) ( required 1.22.0 or higher ) 
