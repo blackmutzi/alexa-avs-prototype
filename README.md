@@ -57,7 +57,7 @@ get libssl-dev and libnghttp2-dev
 apt-get -t jessie-backports install libssl-dev
 apt-get -t stretch install libnghttp2-dev
 ```
-after remove repositorys and run apt-get update. FINISH.  
+after remove repositorys and run apt-get update. FINISH.   
 # Alexa Voice Service Features ( This is work in progress )
 * ALERT ( [AlertInterface](https://developer.amazon.com/public/solutions/alexa/alexa-voice-service/reference/alerts) )
 * Audioplayer ( [Audioplayer](https://developer.amazon.com/public/solutions/alexa/alexa-voice-service/reference/audioplayer) )
