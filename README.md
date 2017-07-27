@@ -20,14 +20,18 @@ cd ./alexa-avs-prototype
 qmake AVS-Prototype.pro
 make -j2
 ```
-# Project DEPENDS ( debian packages )
+# DEPENDS ( debian / raspbian packages )
 * libevent-dev ( version 2.0.5 )
-* libmp3lame-dev
-* libcurl-dev ( version 7.54.0 or higher )
-* libssl-dev ( version 1.0.2 - ALPN h2 Protocol needed ) - TLSv1.2
-* libboost-all-dev ( version 1.63 required )
+* libmp3lame-dev ( version 3.99.5 )
+* libcurl-dev ( version 7.54.0 )
+* libssl-dev ( version 1.0.2 - ALPN h2 Protocol needed )
+* libboost-all-dev ( tested version with 1.55 , 1.63 )
 * libasound2-dev 
-* libnghttp2-dev ( version 1.22.0 or higher ) 
+* libnghttp2-dev ( tested version 1.22.0 or higher )   
+# Known Bugs:
+* libboost-all-dev version 1.62  ( compile error ) 
+* libnghttp2-dev version 0.6.4.2 ( to much nghttp2 Bugs ) ( required 1.22.0 or higher ) 
+* libssl-dev version 1.0.1 ( ALPN protocol: h2 is not negotiated error message ) ( required version 1.0.2 )
 # AVS Configuration
 #### First Step
 go to config directory and modify config.json file 
