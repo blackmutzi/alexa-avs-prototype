@@ -52,6 +52,9 @@ And Restart again AVS-Prototype. FINISH Configuration. AVS-Prototpye Client is n
 * libssl-dev version 1.0.1 - ALPN protocol: h2 is not negotiated error message ( required version 1.0.2 )
 # Solution for libssl-dev and libnghttp2-dev
 add [jessie-backports](https://github.com/superjamie/lazyweb/wiki/Raspberry-Pi-Debian-Backports) repository 
+```sh
+apt-get -t jessie-backports install libssl-dev
+```
 # Alexa Voice Service Features ( This is work in progress )
 * ALERT ( [AlertInterface](https://developer.amazon.com/public/solutions/alexa/alexa-voice-service/reference/alerts) )
 * Audioplayer ( [Audioplayer](https://developer.amazon.com/public/solutions/alexa/alexa-voice-service/reference/audioplayer) )
