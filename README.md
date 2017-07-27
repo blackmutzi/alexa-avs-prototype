@@ -20,18 +20,6 @@ cd ./alexa-avs-prototype
 qmake AVS-Prototype.pro
 make -j2
 ```
-# DEPENDS ( debian / raspbian packages )
-* libevent-dev ( version 2.0.5 )
-* libmp3lame-dev ( version 3.99.5 )
-* libcurl-dev ( version 7.54.0 )
-* libssl-dev ( version 1.0.2 - ALPN h2 Protocol needed )
-* libboost-all-dev ( tested version with 1.55 , 1.63 )
-* libasound2-dev 
-* libnghttp2-dev ( tested version 1.22.0 or higher )   
-# Known Bugs:
-* libboost-all-dev version 1.62  ( compile error ) 
-* libnghttp2-dev version 0.6.4.2 ( to much nghttp2 Bugs ) ( required 1.22.0 or higher ) 
-* libssl-dev version 1.0.1 ( ALPN protocol: h2 is not negotiated error message ) ( required version 1.0.2 )
 # AVS Configuration
 #### First Step
 go to config directory and modify config.json file 
@@ -49,6 +37,18 @@ chmod +x ./AVS-Prototype
 the AVS-Client show you a link, copy it.
 And login into the Amazon Security Profile Website. Then copy den code_grant key and save it into the config.json.
 And Restart again AVS-Prototype. FINISH Configuration. AVS-Prototpye Client is now permanent READY.
+# DEPENDS ( debian / raspbian packages )
+* libevent-dev ( version 2.0.5 )
+* libmp3lame-dev ( version 3.99.5 )
+* libcurl-dev ( version 7.54.0 )
+* libssl-dev ( version 1.0.2 - ALPN h2 Protocol needed )
+* libboost-all-dev ( tested version with 1.55 , 1.63 )
+* libasound2-dev 
+* libnghttp2-dev ( tested version 1.22.0 or higher )   
+# Known Bugs:
+* libboost-all-dev version 1.62  ( compile error ) 
+* libnghttp2-dev version 0.6.4.2 ( to much nghttp2 Bugs ) ( required 1.22.0 or higher ) 
+* libssl-dev version 1.0.1 ( ALPN protocol: h2 is not negotiated error message ) ( required version 1.0.2 )
 # Alexa Voice Service Features ( This is work in progress )
 * ALERT ( [AlertInterface](https://developer.amazon.com/public/solutions/alexa/alexa-voice-service/reference/alerts) )
 * Audioplayer ( [Audioplayer](https://developer.amazon.com/public/solutions/alexa/alexa-voice-service/reference/audioplayer) )
