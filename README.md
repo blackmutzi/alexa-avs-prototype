@@ -58,7 +58,3 @@ apt-get -t jessie-backports install libssl-dev
 apt-get -t stretch install libnghttp2-dev
 ```
 after remove repositorys and run apt-get update. FINISH.   
-# Alexa Voice Service Features ( This is work in progress )
-* ALERT ( [AlertInterface](https://developer.amazon.com/public/solutions/alexa/alexa-voice-service/reference/alerts) )
-* [Audioplayer](https://developer.amazon.com/public/solutions/alexa/alexa-voice-service/reference/audioplayer) - amazon music is not available for other devices
-* Notification ( [NotificationInterface](https://developer.amazon.com/public/solutions/alexa/alexa-voice-service/reference/notifications) ) 
