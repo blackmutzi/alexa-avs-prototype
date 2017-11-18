@@ -22,6 +22,16 @@ go to config directory and modify ./src/config/config.json file
 ```sh
 cd ./alexa-avs-prototype/src/config/
 nano config.json 
+
+{
+ "client_id":" YOUR_CLIENT_ID_HERE ",
+ "client_secret":" YOUR_CLIENT_SECRET_ID_HERE ",
+ "code_grant":" YOUR_CODE_GRANT_HERE",
+ "product_id":" YOUR_PRODUCT_NAME_HERE ",
+ "redirect_uri":"https://localhost:3000/authresponse",
+ "refresh_token":"AVS-CLIENT_SET_TOKEN_AUTOMATIC"
+}
+
 ```
 and write client_id, client_secret and product_id into the config. ( @see amazon-security-profile )
 #### second Step
@@ -33,23 +43,20 @@ the avs-client show you a link, copy it in your Browser. Login Now ..
 
 and get the grant code, save the grant code in the ./alexa-avs-prototype/src/config/config.json file, finish.
 
-# DEPENDS ( debian / raspbian packages )
-* libevent-dev ( version 2.0.5 )
-* libmp3lame-dev ( version 3.99.5 )
-* libcurl-dev ( version 7.54.0 )
-* libssl-dev ( version 1.0.2 - ALPN h2 Protocol needed )
-* libboost-all-dev ( tested version with 1.55 , 1.63 )
-* libasound2-dev ( version 1.0.28 )
-* libnghttp2-dev ( version 1.18.1-1 , 1.22.0 , 1.24.0 or higher )   
-# Known Bugs:
-* libboost-all-dev version 1.62 - compile error 
-* libnghttp2-dev version 0.6.4.2 - to much nghttp2 Bugs ( required 1.22.0 or higher ) 
-* libssl-dev version 1.0.1 - ALPN protocol: h2 is not negotiated error message ( required version 1.0.2 )
-# solution for libssl-dev and libnghttp2-dev
-add two [repositorys](https://github.com/superjamie/lazyweb/wiki/Raspberry-Pi-Debian-Backports) stretch and jessie-backports into /etc/apt/sources.list file.
-get libssl-dev and libnghttp2-dev
+# depends installing ( debian )
 ```sh
-apt-get -t jessie-backports install libssl-dev
-apt-get -t stretch install libnghttp2-dev
-```
-after remove repositorys and run apt-get update. FINISH.   
+install:
+  - sudo apt-get install libcurl4-gnutls-dev
+  - sudo apt-get install libboost-all-dev
+  - sudo apt-get install gcc-4.9
+  - sudo apt-get install g++-4.9
+  - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.9 100
+  - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.9 100
+  - sudo add-apt-repository -y "deb http://de.archive.ubuntu.com/ubuntu artful main restricted universe multiverse"
+  - sudo apt-get update -qq
+  - sudo apt-get install libnghttp2-dev
+  - sudo apt-get install libevent-dev
+  - sudo apt-get install libmp3lame-dev
+  - sudo apt-get install libssl-dev
+  - sudo apt-get install libasound2-dev
+ ```
