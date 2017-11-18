@@ -1,8 +1,0 @@
-{
- "client_id":"",
- "client_secret":"",
- "code_grant":"",
- "product_id":"",
- "redirect_uri":"https://localhost:3000/authresponse",
- "refresh_token":""
-}
