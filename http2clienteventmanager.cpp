@@ -39,6 +39,7 @@ void HTTP2ClientEventManager::unregisterDirectivenListener(DirectivenListener *l
     m_directiven_listener_list.remove( listener );
 }
 
+<<<<<<< HEAD
 void HTTP2ClientEventManager::registerAudioDirectivenListener(AudioPlayerDirectivenListener *listener)
 {
     m_audio_directiven_listener_list.push_back( listener );
@@ -49,6 +50,8 @@ void HTTP2ClientEventManager::unregisterAudioDirectivenListener(AudioPlayerDirec
     m_audio_directiven_listener_list.remove( listener );
 }
 
+=======
+>>>>>>> abd4fba99cc54577da3d9a7eebed7420bcfd3ce6
 void HTTP2ClientEventManager::setDownChannelStatus(bool status)
 {
     m_downchannel_status = status;
@@ -136,6 +139,7 @@ void HTTP2ClientEventManager::invokeAllEvents( HTTPResponse * response )
                             listener->onSpeekerSetMuteDirective( event );
             }
         }
+<<<<<<< HEAD
 
         for( AudioPlayerDirectivenListener * listener : m_audio_directiven_listener_list )
         {
@@ -157,6 +161,8 @@ void HTTP2ClientEventManager::invokeAllEvents( HTTPResponse * response )
                 }
             }
         }
+=======
+>>>>>>> abd4fba99cc54577da3d9a7eebed7420bcfd3ce6
     }
 
     delete event;

@@ -51,6 +51,7 @@ namespace Network
             EVENT_STREAM_PLAYBACK_STUTTER_STARTED ,
             EVENT_STREAM_PLAYBACK_STUTTER_FINISHED ,
             EVENT_STREAM_PLAYBACK_QUEUE_CLEARED
+
         };
 
         class HTTP2Client : public NgHTTP2MultiplexHandler , public NgHTTP2ResponseListener

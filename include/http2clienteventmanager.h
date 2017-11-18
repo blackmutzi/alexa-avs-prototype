@@ -35,7 +35,21 @@ namespace Network
     namespace HTTP2
     {
             using DirectivenListenerList  = std::list< DirectivenListener * >;
+<<<<<<< HEAD
             using AudioDirectivenList     = std::list< AudioPlayerDirectivenListener * >;
+=======
+
+            enum LINES
+            {
+                LINE_POSITION_0 ,
+                LINE_POSITION_1 ,
+                LINE_POSITION_2 ,
+                LINE_POSITION_3 ,
+                LINE_POSITION_4 ,
+                LINE_POSITION_5
+            };
+
+>>>>>>> abd4fba99cc54577da3d9a7eebed7420bcfd3ce6
 
             class HTTP2ClientEventManager
             {
@@ -46,9 +60,12 @@ namespace Network
                     void registerDirectivenListener( DirectivenListener * listener );
                     void unregisterDirectivenListener( DirectivenListener * listener );
 
+<<<<<<< HEAD
                     void registerAudioDirectivenListener( AudioPlayerDirectivenListener * listener );
                     void unregisterAudioDirectivenListener( AudioPlayerDirectivenListener * listener );
 
+=======
+>>>>>>> abd4fba99cc54577da3d9a7eebed7420bcfd3ce6
                     virtual void invokeAllEvents( HTTPResponse * response );
 
                     void setDownChannelStatus( bool status );
@@ -69,7 +86,10 @@ namespace Network
                     HTTPClientDirectiveEvent * http_response_analyse( HTTPResponse * response );
 
                     DirectivenListenerList m_directiven_listener_list;
+<<<<<<< HEAD
                     AudioDirectivenList m_audio_directiven_listener_list;
+=======
+>>>>>>> abd4fba99cc54577da3d9a7eebed7420bcfd3ce6
 
                     int * m_stream_status;
                     bool m_downchannel_status;

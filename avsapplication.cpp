@@ -48,7 +48,10 @@ void AVSApplication::main(int argc, char **argv)
    m_avs_controller = new AVSController( m_ipc_factory , this );
    m_avs_controller->startWakeWordServer();
    m_avs_controller->startAVSClient();
+<<<<<<< HEAD
    m_avs_controller->startAudioStreaming();
+=======
+>>>>>>> abd4fba99cc54577da3d9a7eebed7420bcfd3ce6
 
    m_avs_client  = m_avs_controller->getAVSClient();
    m_started = true;

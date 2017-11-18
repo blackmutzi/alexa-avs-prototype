@@ -56,7 +56,14 @@ void AudioPlayback::playback( char * audio_bytes , snd_pcm_uframes_t audio_frame
 
     for( snd_pcm_uframes_t frames = frame_rythmus ; frames <= audio_frames; frames += frame_rythmus )
     {
+<<<<<<< HEAD
             while( m_muted ){} //if true then wait | playback stop | playback resume
+=======
+            if( m_muted ) // if true then break - cancel audio output
+            {
+                break;
+            }
+>>>>>>> abd4fba99cc54577da3d9a7eebed7420bcfd3ce6
 
             offset = pcm_buffer_size * loop_count;
             rc = snd_pcm_writei(playback_handle, audio_bytes + offset , frame_rythmus );

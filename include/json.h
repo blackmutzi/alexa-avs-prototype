@@ -125,10 +125,13 @@ namespace AVSJson
             static std::string PLAYER_ACTIVITY_BUFFER_UNDERRUN = "BUFFER_UNDERRUN";
             static std::string PLAYER_ACTIVITY_FINISHED = "FINISHED";
             static std::string PLAYER_ACTIVITY_STOPPED  = "STOPPED";
+<<<<<<< HEAD
 
             static std::string DIRECTIVE_PLAY = "Play";
             static std::string DIRECTIVE_STOP = "Stop";
             static std::string DIRECTIVE_CLEAR_QUEUE = "ClearQueue";
+=======
+>>>>>>> abd4fba99cc54577da3d9a7eebed7420bcfd3ce6
      }
 
      //Alerts.AlertsState

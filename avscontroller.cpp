@@ -33,13 +33,20 @@ AVSController::AVSController(WakeWordIPCFactory *wakeWordIPCFactory, WakeWordDet
       m_avs_client( nullptr ) ,
       m_avs_authenticator( nullptr ) ,
       m_avs_playback( new AVSPlayback() ) ,
+<<<<<<< HEAD
       m_avs_playback_controller( new AVSPlaybackController( m_avs_client ) ) ,
+=======
+>>>>>>> abd4fba99cc54577da3d9a7eebed7420bcfd3ce6
       m_wakeword_agent_enabled(true) ,
       m_accept_wakeword_events(true) ,
       m_audio_streaming(false)
 {
     // Read Configuration
+<<<<<<< HEAD
     m_avs_authenticator = new AVSConfigAuthenticator("/etc/alexa/config.json");
+=======
+    m_avs_authenticator = new AVSConfigAuthenticator("./config/config.json");
+>>>>>>> abd4fba99cc54577da3d9a7eebed7420bcfd3ce6
     m_avs_authenticator->readConfig();
 
     // Get Access Token
@@ -52,12 +59,15 @@ AVSController::AVSController(WakeWordIPCFactory *wakeWordIPCFactory, WakeWordDet
 
     // register listener
     m_avs_client->getEventManager()->registerDirectivenListener( this );
+<<<<<<< HEAD
 
     // register audio listener ( audio directive )
     m_avs_client->getEventManager()->registerAudioDirectivenListener( m_avs_playback_controller );
 
     // init playbackThread ( AVS Audioplayer Feature )
     m_avs_playback_controller->initPlaybackThread();
+=======
+>>>>>>> abd4fba99cc54577da3d9a7eebed7420bcfd3ce6
 }
 AVSController::~AVSController(){}
 

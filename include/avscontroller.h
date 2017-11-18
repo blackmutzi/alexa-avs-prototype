@@ -38,6 +38,7 @@
 #include "directivenlistener.h"
 #include "avsplaybackcontroller.h"
 
+
 using namespace WakeWord;
 using namespace Audio;
 using namespace Network::HTTP;
@@ -93,6 +94,7 @@ class AVSController : public WakeWordDetectedHandler , public DirectivenListener
         AVSConfigAuthenticator * m_avs_authenticator;
         AVSPlayback * m_avs_playback;
         AVSPlaybackController * m_avs_playback_controller;
+
 
         bool m_wakeword_agent_enabled;
         bool m_accept_wakeword_events;

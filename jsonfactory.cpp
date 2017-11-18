@@ -108,7 +108,11 @@ const std::string JsonFactory::createSystemSynchronizeEvent( const SynchronizeSt
 
     JsonFileLoader loader( json_file );
 
+<<<<<<< HEAD
     loader.addReplaceData("{{Alerts.AlertsState}}"               ,  createAlertsContext( event->alertsState ) );
+=======
+    loader.addReplaceData("{{Alerts.AlertsState}}"                ,  createAlertsContext( event->alertsState ) );
+>>>>>>> abd4fba99cc54577da3d9a7eebed7420bcfd3ce6
     loader.addReplaceData("{{AudioPlayer.PlaybackState}}"        ,  createPlaybackContext( event->playbackState ));
     loader.addReplaceData("{{Speaker.VolumeState}}"              ,  createSpeakerContext( event->volumeState ));
     loader.addReplaceData("{{SpeechSynthesizer.SpeechState}}"    ,  createSpeechSynthesizerContext( event->speechState) );
@@ -129,7 +133,11 @@ const std::string JsonFactory::createSpeechRecognizerEvent( const SynchronizeSta
 
     JsonFileLoader loader( json_file );
 
+<<<<<<< HEAD
     loader.addReplaceData("{{Alerts.AlertsState}}"               ,  createAlertsContext( event->alertsState ) );
+=======
+    loader.addReplaceData("{{Alerts.AlertsState}}"                ,  createAlertsContext( event->alertsState ) );
+>>>>>>> abd4fba99cc54577da3d9a7eebed7420bcfd3ce6
     loader.addReplaceData("{{AudioPlayer.PlaybackState}}"        ,  createPlaybackContext( event->playbackState ));
     loader.addReplaceData("{{Speaker.VolumeState}}"              ,  createSpeakerContext( event->volumeState ));
     loader.addReplaceData("{{SpeechSynthesizer.SpeechState}}"    ,  createSpeechSynthesizerContext( event->speechState) );
@@ -262,7 +270,11 @@ const std::string JsonFactory::createCommandCustomEvent(const SynchronizeStateEv
 
     JsonFileLoader loader( json_file );
 
+<<<<<<< HEAD
     loader.addReplaceData("{{Alerts.AlertsState}}"               ,  createAlertsContext( event->alertsState ) );
+=======
+    loader.addReplaceData("{{Alerts.AlertsState}}"                ,  createAlertsContext( event->alertsState ) );
+>>>>>>> abd4fba99cc54577da3d9a7eebed7420bcfd3ce6
     loader.addReplaceData("{{AudioPlayer.PlaybackState}}"        ,  createPlaybackContext( event->playbackState ));
     loader.addReplaceData("{{Speaker.VolumeState}}"              ,  createSpeakerContext( event->volumeState ));
     loader.addReplaceData("{{SpeechSynthesizer.SpeechState}}"    ,  createSpeechSynthesizerContext( event->speechState) );

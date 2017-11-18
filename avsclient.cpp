@@ -152,10 +152,18 @@ StreamQueueData * AVSClient::onProcessStreamEvent( StreamQueueEvent event )
     char * audio_bytes;
     AVSJson::JsonFactory factory;
     std::string message_id = "";
+<<<<<<< HEAD
     PayloadPlaybackFailedParam param;
     boost::uuids::uuid message_id_uuid = boost::uuids::uuid( boost::uuids::random_generator()() );
     message_id = boost::lexical_cast<std::string>( message_id_uuid );
 
+=======
+
+    boost::uuids::uuid message_id_uuid = boost::uuids::uuid( boost::uuids::random_generator()() );
+    message_id = boost::lexical_cast<std::string>( message_id_uuid );
+
+
+>>>>>>> abd4fba99cc54577da3d9a7eebed7420bcfd3ce6
     switch( event )
     {
        case EVENT_STREAM_SYNCSTATE:
@@ -202,6 +210,7 @@ StreamQueueData * AVSClient::onProcessStreamEvent( StreamQueueEvent event )
 
                data = getRequestBuilder()->buildEventStream( factory.createSpeechSynthesizerFinishEvent( message_id , m_sync_event->speechState->token ) );
        break;
+<<<<<<< HEAD
 
        case EVENT_STREAM_PLAYBACK_STARTED:
                 data = getRequestBuilder()->buildEventStream( factory.createPlaybackStartedEvent( message_id , m_sync_event->playbackState->token ,  m_sync_event->playbackState->offsetInMilliseconds ));
@@ -251,6 +260,8 @@ StreamQueueData * AVSClient::onProcessStreamEvent( StreamQueueEvent event )
                 data = getRequestBuilder()->buildEventStream( factory.createPlaybackQueueClearedEvent( message_id ));
        break;
 
+=======
+>>>>>>> abd4fba99cc54577da3d9a7eebed7420bcfd3ce6
     }
 
     return data;

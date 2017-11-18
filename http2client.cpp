@@ -54,6 +54,10 @@ void HTTP2Client::pushStreamRequest( StreamQueueEvent event )
 {
     std::queue< StreamQueueEvent > * queue = m_stream_queue.get();
     queue->push( event );
+<<<<<<< HEAD
+=======
+
+>>>>>>> abd4fba99cc54577da3d9a7eebed7420bcfd3ce6
     m_cv.notify_one();
 }
 

@@ -35,6 +35,7 @@ class AVSLame
         int decode1_headers( unsigned char * mp3_buf , size_t mp3_len , short pcm_l[] , short pcm_r[] );
         int decode1( unsigned char *mp3_buf, size_t mp3_len, short pcm_l[] , short pcm_r[] );
 
+
     private:
 
         lame_t m_lame_handler;

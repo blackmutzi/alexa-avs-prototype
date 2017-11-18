@@ -121,7 +121,6 @@ const std::string AVSAuthenticator::GenerateRefreshToken( const string code_gran
         post_data = req_post_data.str();
         url_encode( post_data );
 
-        std::cout << post_data << std::endl;
 
         HTTPResponse * response = new HTTPResponse();
         HTTPRequest  * req = new HTTPRequest("https://api.amazon.com/auth/o2/token", response );
@@ -170,8 +169,11 @@ const std::string AVSAuthenticator::GenerateAccessToken( string refresh_token ) 
     post_data = req_post_data.str();
     url_encode( post_data );
 
+<<<<<<< HEAD
     std::cout << post_data << std::endl;
 
+=======
+>>>>>>> abd4fba99cc54577da3d9a7eebed7420bcfd3ce6
     HTTPResponse * response = new HTTPResponse();
     HTTPRequest * req = new HTTPRequest("https://api.amazon.com/auth/o2/token", response );
 
