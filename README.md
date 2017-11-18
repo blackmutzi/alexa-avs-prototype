@@ -1,43 +1,38 @@
 [![N|Solid](https://github.com/alexa/alexa-avs-sample-app/wiki/assets/alexa-logo-3.png)](https://developer.amazon.com/de/alexa-voice-service)
-# alexa-avs-prototype ( C++ ) [![travis](https://travis-ci.org/blackmutzi/alexa-avs-prototype.svg?branch=master)](https://travis-ci.org/)
-Alexa Voice Service (AVS) client in C++ for raspberry pi or any Linux Distribution -  This is a work in progress.
-Project is tested with Linux Gentoo(x86_64) and Raspbian(ARM).
-# What is AVS?
-Alexa Voice Service (AVS) is Amazon’s intelligent voice recognition and natural language understanding service that allows you as a developer to voice-enable any connected device that has a microphone and speaker.
-# What you need?
+# alexa-avs-prototype (c++) [![travis](https://travis-ci.org/blackmutzi/alexa-avs-prototype.svg?branch=master)](https://travis-ci.org/)
+Alexa Voice Service (AVS) client in c++ for raspberry pi or any Linux Distribution.
+Project tested on Gentoo(x86_64) and Raspbian(arm).
+
+# what you need?
 * A Linux Distribution with PulseAudio Support.
 * Amazon Developer Account.
 * Follow the steps [here](https://github.com/alexa/alexa-avs-sample-app/wiki/Raspberry-Pi) to create a security profile.
 * From Security Profile, you need ProductID, ClientID, and ClientSecret.
 * And a WakeWordEngine Client from [here]( https://github.com/alexa/alexa-avs-sample-app/tree/master/samples/wakeWordAgent ).
 
-# Download it
+# download && build
 ```sh
 git clone https://github.com/blackmutzi/alexa-avs-prototype
 cd ./alexa-avs-prototype
+qmake ./src/alexa-avs-prototype.pro
+make
 ```
-# Build it
+# avs-configuration
+#### first Step
+go to config directory and modify ./src/config/config.json file 
 ```sh
-qmake AVS-Prototype.pro
-make -j2
-```
-# AVS Configuration
-#### First Step
-go to config directory and modify config.json file 
-```sh
-cd ./alexa-avs-prototype/config/
+cd ./alexa-avs-prototype/src/config/
 nano config.json 
 ```
-and set only client_id, client_secret and product_id.
-#### Second Step
-run the AVS Prototype Client ...
+and write client_id, client_secret and product_id into the config. ( @see security-profile )
+#### second Step
+start now prototype ...
 ```sh
-chmod +x ./AVS-Prototype
-./AVS-Prototype
+./alexa-avs-prototype
 ```
-the AVS-Client show you a link, copy it.
-And login into the Amazon Security Profile Website. Then copy den code_grant key and save it into the config.json.
-And Restart again AVS-Prototype. FINISH Configuration. AVS-Prototpye Client is now permanent READY.
+the avs-client show you a link, copy it in your Browser. Login Now ..
+and get the grant code, save the grant code in the ./alexa-avs-prototye/src/config/config.json file, finish.
+
 # DEPENDS ( debian / raspbian packages )
 * libevent-dev ( version 2.0.5 )
 * libmp3lame-dev ( version 3.99.5 )
