@@ -27,5 +27,6 @@ install:
 
 script:
   - echo "Executing qmake..."
+  - gcc --version
   - qmake ${PROJECT_PRO_FILE} -r ${QMAKE_PARAMS}
   - make
