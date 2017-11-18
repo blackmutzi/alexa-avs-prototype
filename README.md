@@ -1,5 +1,5 @@
 [![N|Solid](https://github.com/alexa/alexa-avs-sample-app/wiki/assets/alexa-logo-3.png)](https://developer.amazon.com/de/alexa-voice-service)
-# alexa-avs-prototype ( C++ )
+# alexa-avs-prototype ( C++ ) [![travis](https://travis-ci.org/blackmutzi/alexa-avs-prototype.svg?branch=master)]()
 Alexa Voice Service (AVS) client in C++ for raspberry pi or any Linux Distribution -  This is a work in progress.
 Project is tested with Linux Gentoo(x86_64) and Raspbian(ARM).
 # What is AVS?
