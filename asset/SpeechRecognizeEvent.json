@@ -1,0 +1,30 @@
+{
+  "context": [
+    {{Alerts.AlertsState}},
+    {{AudioPlayer.PlaybackState}},
+    {{Speaker.VolumeState}},
+    {{SpeechSynthesizer.SpeechState}},
+    {{SpeechRecognizer.RecognizerState}}
+  ],
+  "event": {
+    "header": {
+      "namespace": "SpeechRecognizer",
+      "name": "Recognize",
+      "messageId": "{{MESSAGE_ID_STRING}}",
+      "dialogRequestId": "{{DIALOG_STRING}}"
+    },
+    "payload": {
+      "profile": "{{PROFILE_STRING}}",
+      "format": "{{FORMAT_STRING}}",
+      "initiator": {
+        "type": "{{TYPE_STRING}}",
+        "payload": {
+          "wakeWordIndices": {
+            "startIndexInSamples": {{LONG}},
+            "endIndexInSamples": {{LONG}}
+          }
+        }
+      }
+    }
+  }
+} 

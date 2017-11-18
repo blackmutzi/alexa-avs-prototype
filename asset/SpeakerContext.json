@@ -1,0 +1,10 @@
+{
+   "header": {
+       "namespace": "Speaker",
+       "name": "VolumeState"
+   },
+   "payload": {
+       "volume": "{{VOLUME}}",
+       "muted": "{{MUTED}}"
+   }
+}

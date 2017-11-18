@@ -1,0 +1,13 @@
+{
+    "event": {
+        "header": {
+            "namespace": "AudioPlayer",
+            "name": "{{EVENT_NAME}}",
+            "messageId": "{{MESSAGE_ID_STRING}}"
+        },
+        "payload": {
+            "token": "{{TOKEN_STRING}}",
+            "offsetInMilliseconds": "{{OFFSET_MS}}"
+        }
+    }
+} 

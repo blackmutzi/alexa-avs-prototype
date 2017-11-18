@@ -1,0 +1,57 @@
+#DEPEND
+
+apt-get install libevent-dev
+apt-get install libmp3lame-dev
+apt-get install libnghttp2-dev
+apt-get install libcurl-dev
+apt-get install libssl-dev
+apt-get install libboost-all-dev/jessie
+apt-get install libboost1.55-all-dev/jessie
+
+qmake Projekt.pro 
+make -j4
+
+
+#Known Bugs:
+---------------
+(FIXED:UPGRADE libssl) ALPN protocol: h2 is not negotiated
+
+echo "deb-src http://httpredir.debian.org/debian jessie-backports main contrib non-free" | sudo tee /etc/apt/sources.list.d/jessie-backports.list
+gpg --keyserver pgpkeys.mit.edu --recv-key  8B48AD6246925553
+apt-get update
+apt-get install openssl/jessie-backports
+apt-get install libssl-dev/jessie-backports
+sudo apt-key adv --recv-key --keyserver keyserver.ubuntu.com 8B48AD6246925553
+
+(NgHTTP2 0.6.4 )NETWORK_ERROR
+Required: 1.22.0
+
+1.24.0.1
+https://packages.debian.org/sid/armhf/libnghttp2-dev/download
+deb http://ftp.de.debian.org/debian sid main  
+apt-get install libnghttp2-dev/sid
+apt-get install libasound2-dev/sid
+apt-get install pulseaudio alsa-utils pulseaudio-module-zeroconf
+
+//unable to connect 
+sudo gpasswd -a user1 pulse-access
+-----------------------------------------------------------------------------
+Raspberry Fresh
+---------------------
+
+apt-get update && apt-get upgrade
+apt-get install qt5-qmake               # ok
+apt-get install gt5-default             # ok
+apt-get install libasound2-dev          # ok
+apt-get install libcurl4-openssl-dev    # ok
+apt-get install libssl-dev 		# Bad  version 1.0.1
+apt-get install libevent-dev            # ok   version 2.0.5 
+apt-get install libnghttp2-dev		# Bad  version 0.6.4.2 
+apt-get install libboost-all-dev 	# ok - version 1.55 
+apt-get install libmp3lame-dev		# ok - version 3.99.5
+
+
+
+
+
+
