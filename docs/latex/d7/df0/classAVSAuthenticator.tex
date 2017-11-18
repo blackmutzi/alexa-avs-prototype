@@ -1,0 +1,117 @@
+\hypertarget{classAVSAuthenticator}{}\section{A\+V\+S\+Authenticator Class Reference}
+\label{classAVSAuthenticator}\index{A\+V\+S\+Authenticator@{A\+V\+S\+Authenticator}}
+Inheritance diagram for A\+V\+S\+Authenticator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d7/df0/classAVSAuthenticator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAVSAuthenticator_a1f79451e5fa0c1390097e4ff73b5b40b}\label{classAVSAuthenticator_a1f79451e5fa0c1390097e4ff73b5b40b}} 
+{\bfseries A\+V\+S\+Authenticator} (std\+::string client\+\_\+id, std\+::string client\+\_\+secret\+\_\+id, std\+::string client\+\_\+redirect\+\_\+uri, std\+::string product\+\_\+id)
+\item 
+\mbox{\Hypertarget{classAVSAuthenticator_ad7f0bc8ce2105bf1b6449e6ff86d5cbf}\label{classAVSAuthenticator_ad7f0bc8ce2105bf1b6449e6ff86d5cbf}} 
+void {\bfseries set\+Client\+ID} (std\+::string client\+\_\+id)
+\item 
+\mbox{\Hypertarget{classAVSAuthenticator_a198c681ea8cc27f07556d4b756e4e38c}\label{classAVSAuthenticator_a198c681ea8cc27f07556d4b756e4e38c}} 
+void {\bfseries set\+Client\+Secret\+ID} (std\+::string client\+\_\+secret\+\_\+id)
+\item 
+\mbox{\Hypertarget{classAVSAuthenticator_abcd468107452a7ad4b9c5dcfcf6b350e}\label{classAVSAuthenticator_abcd468107452a7ad4b9c5dcfcf6b350e}} 
+void {\bfseries set\+Redirect\+U\+RI} (std\+::string redirect\+\_\+uri)
+\item 
+\mbox{\Hypertarget{classAVSAuthenticator_ab0f9175b2937a08ca40484618a808bda}\label{classAVSAuthenticator_ab0f9175b2937a08ca40484618a808bda}} 
+void {\bfseries set\+Product\+ID} (std\+::string product\+\_\+id)
+\item 
+\mbox{\Hypertarget{classAVSAuthenticator_aa0e753cc2972da2dd5d6a7b010386549}\label{classAVSAuthenticator_aa0e753cc2972da2dd5d6a7b010386549}} 
+void {\bfseries set\+Refresh\+Token} (std\+::string refresh\+\_\+token)
+\item 
+const std\+::string \hyperlink{classAVSAuthenticator_ad7c95c1a81852aff4c9bedb96da49ee8}{Generate\+Amazon\+Login\+Page} (void)
+\begin{DoxyCompactList}\small\item\em Generate\+Amazon\+Login\+Page. \end{DoxyCompactList}\item 
+const std\+::string \hyperlink{classAVSAuthenticator_ab08c84db0227d93f3a23713bd9970c95}{Generate\+Refresh\+Token} (const std\+::string code\+\_\+grant)  throw (\+Authenticator\+State)
+\begin{DoxyCompactList}\small\item\em Generate\+Refresh\+Token. \end{DoxyCompactList}\item 
+const std\+::string \hyperlink{classAVSAuthenticator_a501ad6b1063945e065ed00d5f25e7dd8}{Generate\+Access\+Token} (std\+::string refresh\+\_\+token)  throw (\+Authenticator\+State)
+\begin{DoxyCompactList}\small\item\em Generate\+Access\+Token. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAVSAuthenticator_a36556663a3cddcea619c4990a6f1b3ef}\label{classAVSAuthenticator_a36556663a3cddcea619c4990a6f1b3ef}} 
+const std\+::string {\bfseries get\+Last\+Code\+Grant} (void) const
+\item 
+\mbox{\Hypertarget{classAVSAuthenticator_a5e81f4f68736463f984b86636d7aad46}\label{classAVSAuthenticator_a5e81f4f68736463f984b86636d7aad46}} 
+const std\+::string {\bfseries get\+Last\+Access\+Token} (void) const
+\item 
+\mbox{\Hypertarget{classAVSAuthenticator_a3b15ba2b326d91dd4e416f040eb31e6e}\label{classAVSAuthenticator_a3b15ba2b326d91dd4e416f040eb31e6e}} 
+const std\+::string {\bfseries get\+Refresh\+Token} (void) const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAVSAuthenticator_a16f585dde9b8f3a57f63a2a2efdb6bb3}\label{classAVSAuthenticator_a16f585dde9b8f3a57f63a2a2efdb6bb3}} 
+std\+::string {\bfseries response\+\_\+analyse\+\_\+refresh\+\_\+token} (\hyperlink{classNetwork_1_1HTTP_1_1HTTPResponse}{H\+T\+T\+P\+Response} $\ast$response)
+\item 
+\mbox{\Hypertarget{classAVSAuthenticator_a10b289223c265cf3d5e42eef181839ea}\label{classAVSAuthenticator_a10b289223c265cf3d5e42eef181839ea}} 
+std\+::string {\bfseries response\+\_\+analyse\+\_\+access\+\_\+token} (\hyperlink{classNetwork_1_1HTTP_1_1HTTPResponse}{H\+T\+T\+P\+Response} $\ast$response)
+\item 
+\mbox{\Hypertarget{classAVSAuthenticator_ab886240a85b2c530286e976af9a62a9c}\label{classAVSAuthenticator_ab886240a85b2c530286e976af9a62a9c}} 
+void {\bfseries url\+\_\+encode} (std\+::string content)
+\item 
+\mbox{\Hypertarget{classAVSAuthenticator_ae88efd94941043ac454a2587031ab74e}\label{classAVSAuthenticator_ae88efd94941043ac454a2587031ab74e}} 
+void {\bfseries replace} (string \&str, string search, string replace)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAVSAuthenticator_a501ad6b1063945e065ed00d5f25e7dd8}\label{classAVSAuthenticator_a501ad6b1063945e065ed00d5f25e7dd8}} 
+\index{A\+V\+S\+Authenticator@{A\+V\+S\+Authenticator}!Generate\+Access\+Token@{Generate\+Access\+Token}}
+\index{Generate\+Access\+Token@{Generate\+Access\+Token}!A\+V\+S\+Authenticator@{A\+V\+S\+Authenticator}}
+\subsubsection{\texorpdfstring{Generate\+Access\+Token()}{GenerateAccessToken()}}
+{\footnotesize\ttfamily const std\+::string A\+V\+S\+Authenticator\+::\+Generate\+Access\+Token (\begin{DoxyParamCaption}\item[{std\+::string}]{refresh\+\_\+token }\end{DoxyParamCaption}) throw  Authenticator\+State) }
+
+
+
+Generate\+Access\+Token. 
+
+Generate new Access\+Tokens from Refresh\+Token 
+\begin{DoxyParams}{Parameters}
+{\em refresh\+\_\+token} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAVSAuthenticator_ad7c95c1a81852aff4c9bedb96da49ee8}\label{classAVSAuthenticator_ad7c95c1a81852aff4c9bedb96da49ee8}} 
+\index{A\+V\+S\+Authenticator@{A\+V\+S\+Authenticator}!Generate\+Amazon\+Login\+Page@{Generate\+Amazon\+Login\+Page}}
+\index{Generate\+Amazon\+Login\+Page@{Generate\+Amazon\+Login\+Page}!A\+V\+S\+Authenticator@{A\+V\+S\+Authenticator}}
+\subsubsection{\texorpdfstring{Generate\+Amazon\+Login\+Page()}{GenerateAmazonLoginPage()}}
+{\footnotesize\ttfamily const std\+::string A\+V\+S\+Authenticator\+::\+Generate\+Amazon\+Login\+Page (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Generate\+Amazon\+Login\+Page. 
+
+G\+ET Amazon Login Page $\vert$=$>$ Login \& get C\+O\+DE G\+R\+A\+NT \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAVSAuthenticator_ab08c84db0227d93f3a23713bd9970c95}\label{classAVSAuthenticator_ab08c84db0227d93f3a23713bd9970c95}} 
+\index{A\+V\+S\+Authenticator@{A\+V\+S\+Authenticator}!Generate\+Refresh\+Token@{Generate\+Refresh\+Token}}
+\index{Generate\+Refresh\+Token@{Generate\+Refresh\+Token}!A\+V\+S\+Authenticator@{A\+V\+S\+Authenticator}}
+\subsubsection{\texorpdfstring{Generate\+Refresh\+Token()}{GenerateRefreshToken()}}
+{\footnotesize\ttfamily const std\+::string A\+V\+S\+Authenticator\+::\+Generate\+Refresh\+Token (\begin{DoxyParamCaption}\item[{const std\+::string}]{code\+\_\+grant }\end{DoxyParamCaption}) throw  Authenticator\+State) }
+
+
+
+Generate\+Refresh\+Token. 
+
+Generate Refresh\+Token from C\+O\+DE G\+R\+A\+NT 
+\begin{DoxyParams}{Parameters}
+{\em code\+\_\+grant} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/mutzi/progs/linux\+\_\+workspace/alexa-\/avs-\/prototype/src/include/avsauthenticator.\+h\item 
+/home/mutzi/progs/linux\+\_\+workspace/alexa-\/avs-\/prototype/src/avsauthenticator.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,60 @@
+\hypertarget{classNetwork_1_1HTTP_1_1HTTPHeader}{}\section{Network\+:\+:H\+T\+TP\+:\+:H\+T\+T\+P\+Header Class Reference}
+\label{classNetwork_1_1HTTP_1_1HTTPHeader}\index{Network\+::\+H\+T\+T\+P\+::\+H\+T\+T\+P\+Header@{Network\+::\+H\+T\+T\+P\+::\+H\+T\+T\+P\+Header}}
+
+
+The \hyperlink{classNetwork_1_1HTTP_1_1HTTPHeader}{H\+T\+T\+P\+Header} class.  
+
+
+
+
+{\ttfamily \#include $<$httpheader.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP_1_1HTTPHeader_a56358fa12bd27707de8ad6cf947cd92d}\label{classNetwork_1_1HTTP_1_1HTTPHeader_a56358fa12bd27707de8ad6cf947cd92d}} 
+{\bfseries H\+T\+T\+P\+Header} (const std\+::string boundary)
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP_1_1HTTPHeader_a6100fd84766656e8874479a75d494ba1}\label{classNetwork_1_1HTTP_1_1HTTPHeader_a6100fd84766656e8874479a75d494ba1}} 
+{\bfseries H\+T\+T\+P\+Header} (const std\+::string content\+\_\+disposition, const std\+::string content\+\_\+tpye)
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP_1_1HTTPHeader_a1b488bbabdf4037e6dc58655f2f9dc91}\label{classNetwork_1_1HTTP_1_1HTTPHeader_a1b488bbabdf4037e6dc58655f2f9dc91}} 
+void {\bfseries set\+Content\+Disposition} (const std\+::string content\+\_\+disposition)
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP_1_1HTTPHeader_a8d90949a97d4d019cbce3affabf2daf7}\label{classNetwork_1_1HTTP_1_1HTTPHeader_a8d90949a97d4d019cbce3affabf2daf7}} 
+void {\bfseries set\+Content\+Type} (const std\+::string content\+\_\+type)
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP_1_1HTTPHeader_a056752befb5b801c1193b9e940d92e94}\label{classNetwork_1_1HTTP_1_1HTTPHeader_a056752befb5b801c1193b9e940d92e94}} 
+void {\bfseries set\+Boundary} (const std\+::string boundary)
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP_1_1HTTPHeader_a0f05d5b3073374318284ea1b667dc183}\label{classNetwork_1_1HTTP_1_1HTTPHeader_a0f05d5b3073374318284ea1b667dc183}} 
+const std\+::string \& {\bfseries get\+Content\+Disposition} (void) const
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP_1_1HTTPHeader_a2f4f982ef8eb3de60e75d3cee7cc21f1}\label{classNetwork_1_1HTTP_1_1HTTPHeader_a2f4f982ef8eb3de60e75d3cee7cc21f1}} 
+const std\+::string \& {\bfseries get\+Content\+Type} (void) const
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP_1_1HTTPHeader_a869ed7b4658bcdb1aec32354a90e1f86}\label{classNetwork_1_1HTTP_1_1HTTPHeader_a869ed7b4658bcdb1aec32354a90e1f86}} 
+const std\+::string \& {\bfseries get\+Boundary} (void) const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP_1_1HTTPHeader_a38ca07e5cbe32cfc51e22abad2fedae0}\label{classNetwork_1_1HTTP_1_1HTTPHeader_a38ca07e5cbe32cfc51e22abad2fedae0}} 
+static std\+::string {\bfseries H\+T\+T\+P\+\_\+\+H\+E\+A\+D\+E\+R\+M\+S\+G\+\_\+\+C\+O\+N\+T\+E\+N\+T\+\_\+\+D\+I\+S\+P\+O\+S\+I\+T\+I\+ON} = \char`\"{}Content-\/Disposition\+: \char`\"{}
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP_1_1HTTPHeader_a22522701d469ddb20b5dd2d641f5e4f1}\label{classNetwork_1_1HTTP_1_1HTTPHeader_a22522701d469ddb20b5dd2d641f5e4f1}} 
+static std\+::string {\bfseries H\+T\+T\+P\+\_\+\+H\+E\+A\+D\+E\+R\+M\+S\+G\+\_\+\+C\+O\+N\+T\+E\+N\+T\+\_\+\+T\+Y\+PE} = \char`\"{}Content-\/Type\+: \char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classNetwork_1_1HTTP_1_1HTTPHeader}{H\+T\+T\+P\+Header} class. 
+
+J\+S\+ON Header\+: Content-\/\+Disposition\+: form-\/data; name=\char`\"{}metadata\char`\"{} Content-\/\+Type\+: application/json; charset=U\+T\+F-\/8
+
+Binary Audio Header\+: Content-\/\+Disposition\+: form-\/data; name=\char`\"{}audio\char`\"{} Content-\/\+Type\+: application/octet-\/stream 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/mutzi/progs/linux\+\_\+workspace/alexa-\/avs-\/prototype/src/include/httpheader.\+h\item 
+/home/mutzi/progs/linux\+\_\+workspace/alexa-\/avs-\/prototype/src/httpheader.\+cpp\end{DoxyCompactItemize}

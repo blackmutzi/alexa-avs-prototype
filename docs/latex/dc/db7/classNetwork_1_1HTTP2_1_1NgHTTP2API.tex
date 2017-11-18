@@ -1,0 +1,539 @@
+\hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2API}{}\section{Network\+:\+:H\+T\+T\+P2\+:\+:Ng\+H\+T\+T\+P2\+A\+PI Class Reference}
+\label{classNetwork_1_1HTTP2_1_1NgHTTP2API}\index{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}}
+Inheritance diagram for Network\+:\+:H\+T\+T\+P2\+:\+:Ng\+H\+T\+T\+P2\+A\+PI\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{dc/db7/classNetwork_1_1HTTP2_1_1NgHTTP2API}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classNetwork_1_1HTTP2_1_1NgHTTP2API_a83048a73d75bda59e9f6b1c97039468e}{set\+Read\+Callback} (H\+T\+T\+P2\+Response\+Header\+Callback header, H\+T\+T\+P2\+Response\+Body\+Callback body, void $\ast$user\+\_\+data)
+\begin{DoxyCompactList}\small\item\em set\+Read\+Callback \end{DoxyCompactList}\item 
+S\+S\+L\+\_\+\+C\+TX $\ast$ \hyperlink{classNetwork_1_1HTTP2_1_1NgHTTP2API_ac6e30f8c88ca773da99ce34724a7dfd0}{create\+\_\+ssl\+\_\+ctx} (void)
+\begin{DoxyCompactList}\small\item\em create\+\_\+ssl\+\_\+ctx \end{DoxyCompactList}\item 
+void \hyperlink{classNetwork_1_1HTTP2_1_1NgHTTP2API_aaff2b630490f8d10c845996f927fd4d8}{initiate\+\_\+connection} (struct event\+\_\+base $\ast$evbase, S\+S\+L\+\_\+\+C\+TX $\ast$ssl\+\_\+ctx, const char $\ast$host, uint16\+\_\+t port, \hyperlink{structNetwork_1_1HTTP2_1_1http2__session__data}{http2\+\_\+session\+\_\+data} $\ast$session\+\_\+data)
+\begin{DoxyCompactList}\small\item\em initiate\+\_\+connection \end{DoxyCompactList}\item 
+\hyperlink{structNetwork_1_1HTTP2_1_1http2__session__data}{http2\+\_\+session\+\_\+data} $\ast$ \hyperlink{classNetwork_1_1HTTP2_1_1NgHTTP2API_a83fa51a83722d8aeab16465c937cc41f}{create\+\_\+http2\+\_\+session\+\_\+data} (struct evdns\+\_\+base $\ast$dnsbase, \hyperlink{classNetwork_1_1HTTP2_1_1NgHTTP2API}{Ng\+H\+T\+T\+P2\+A\+PI} $\ast$api)
+\begin{DoxyCompactList}\small\item\em create\+\_\+http2\+\_\+session\+\_\+data \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2API_a1ba3edf107165568b6a0b4138b285ed9}\label{classNetwork_1_1HTTP2_1_1NgHTTP2API_a1ba3edf107165568b6a0b4138b285ed9}} 
+\hyperlink{structNetwork_1_1HTTP2_1_1http2__session__data}{http2\+\_\+session\+\_\+data} $\ast$ {\bfseries create\+\_\+http2\+\_\+connection\+\_\+session\+\_\+data} (struct event\+\_\+base $\ast$evbase, \hyperlink{classNetwork_1_1HTTP2_1_1NgHTTP2API}{Ng\+H\+T\+T\+P2\+A\+PI} $\ast$api)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{classNetwork_1_1HTTP2_1_1NgHTTP2API_af03f36272bba30d171567765cde46c86}{select\+\_\+next\+\_\+proto\+\_\+cb} (S\+SL $\ast$ssl, unsigned char $\ast$$\ast$out, unsigned char $\ast$outlen, const unsigned char $\ast$in, unsigned int inlen, void $\ast$arg)
+\begin{DoxyCompactList}\small\item\em select\+\_\+next\+\_\+proto\+\_\+cb \+: callback function \end{DoxyCompactList}\item 
+static S\+SL $\ast$ \hyperlink{classNetwork_1_1HTTP2_1_1NgHTTP2API_a3dba39aa33a1c629359d76a66d92ec0d}{create\+\_\+ssl} (S\+S\+L\+\_\+\+C\+TX $\ast$ssl\+\_\+ctx)
+\begin{DoxyCompactList}\small\item\em create\+\_\+ssl \end{DoxyCompactList}\item 
+static void \hyperlink{classNetwork_1_1HTTP2_1_1NgHTTP2API_a0356d7de7d3df4fa59b91610dcbaf5ef}{eventcb} (struct bufferevent $\ast$bev, short events, void $\ast$ptr)
+\begin{DoxyCompactList}\small\item\em eventcb \+: callback function \end{DoxyCompactList}\item 
+static void \hyperlink{classNetwork_1_1HTTP2_1_1NgHTTP2API_a9f3146f288f2fb033296b6e43564cc7b}{readcb} (struct bufferevent $\ast$bev, void $\ast$ptr)
+\begin{DoxyCompactList}\small\item\em readcb \+: callback function \end{DoxyCompactList}\item 
+static void \hyperlink{classNetwork_1_1HTTP2_1_1NgHTTP2API_a5d047441518239869e1c699323ee3c92}{writecb} (struct bufferevent $\ast$bev, void $\ast$ptr)
+\begin{DoxyCompactList}\small\item\em writecb \+: callback function \end{DoxyCompactList}\item 
+static void \hyperlink{classNetwork_1_1HTTP2_1_1NgHTTP2API_ac54322656bb0db60581bbcae17a18e1a}{initialize\+\_\+nghttp2\+\_\+session} (\hyperlink{structNetwork_1_1HTTP2_1_1http2__session__data}{http2\+\_\+session\+\_\+data} $\ast$session\+\_\+data)
+\begin{DoxyCompactList}\small\item\em initialize\+\_\+nghttp2\+\_\+session \end{DoxyCompactList}\item 
+static void \hyperlink{classNetwork_1_1HTTP2_1_1NgHTTP2API_aaf79d1a5a4e907ba727c8a5b8520c7ae}{send\+\_\+client\+\_\+connection\+\_\+header} (\hyperlink{structNetwork_1_1HTTP2_1_1http2__session__data}{http2\+\_\+session\+\_\+data} $\ast$session\+\_\+data)
+\begin{DoxyCompactList}\small\item\em send\+\_\+client\+\_\+connection\+\_\+header \end{DoxyCompactList}\item 
+static void \hyperlink{classNetwork_1_1HTTP2_1_1NgHTTP2API_a27e408f85d4199cd26250c59ba13553f}{submit\+\_\+request} (\hyperlink{structNetwork_1_1HTTP2_1_1http2__session__data}{http2\+\_\+session\+\_\+data} $\ast$session\+\_\+data)
+\item 
+static void \hyperlink{classNetwork_1_1HTTP2_1_1NgHTTP2API_a6ed7953f91c559adef118fbfa7e96d46}{submit\+\_\+data} (\hyperlink{structNetwork_1_1HTTP2_1_1http2__session__data}{http2\+\_\+session\+\_\+data} $\ast$session\+\_\+data)
+\begin{DoxyCompactList}\small\item\em submit\+\_\+data \end{DoxyCompactList}\item 
+static int \hyperlink{classNetwork_1_1HTTP2_1_1NgHTTP2API_a98fcbd6599625a1fdaec14f49095bc7a}{session\+\_\+send} (\hyperlink{structNetwork_1_1HTTP2_1_1http2__session__data}{http2\+\_\+session\+\_\+data} $\ast$session\+\_\+data)
+\begin{DoxyCompactList}\small\item\em session\+\_\+send \end{DoxyCompactList}\item 
+static ssize\+\_\+t \hyperlink{classNetwork_1_1HTTP2_1_1NgHTTP2API_a419c427d7059d6d1858136f6913a1ae6}{data\+\_\+source\+\_\+read\+\_\+callback} (nghttp2\+\_\+session $\ast$session, int32\+\_\+t stream\+\_\+id, uint8\+\_\+t $\ast$buf, size\+\_\+t length, uint32\+\_\+t $\ast$data\+\_\+flags, nghttp2\+\_\+data\+\_\+source $\ast$source, void $\ast$user\+\_\+data)
+\begin{DoxyCompactList}\small\item\em data\+\_\+source\+\_\+read\+\_\+callback \+: callback function \end{DoxyCompactList}\item 
+static ssize\+\_\+t \hyperlink{classNetwork_1_1HTTP2_1_1NgHTTP2API_aef0ee4f04992e02b2aa2916e89e03114}{send\+\_\+callback} (nghttp2\+\_\+session $\ast$session, const uint8\+\_\+t $\ast$data, size\+\_\+t length, int flags, void $\ast$user\+\_\+data)
+\begin{DoxyCompactList}\small\item\em send\+\_\+callback \+: callback function \end{DoxyCompactList}\item 
+static int \hyperlink{classNetwork_1_1HTTP2_1_1NgHTTP2API_a64f69e8e4726d3baec216cfeb786e6fe}{on\+\_\+header\+\_\+callback} (nghttp2\+\_\+session $\ast$session, const nghttp2\+\_\+frame $\ast$frame, const uint8\+\_\+t $\ast$name, size\+\_\+t namelen, const uint8\+\_\+t $\ast$value, size\+\_\+t valuelen, uint8\+\_\+t flags, void $\ast$user\+\_\+data)
+\begin{DoxyCompactList}\small\item\em on\+\_\+header\+\_\+callback \+: callback function \end{DoxyCompactList}\item 
+static int \hyperlink{classNetwork_1_1HTTP2_1_1NgHTTP2API_adc5ac253870d245cee1ce1c890b7b4e6}{on\+\_\+frame\+\_\+recv\+\_\+callback} (nghttp2\+\_\+session $\ast$session, const nghttp2\+\_\+frame $\ast$frame, void $\ast$user\+\_\+data)
+\begin{DoxyCompactList}\small\item\em on\+\_\+frame\+\_\+recv\+\_\+callback \+: callback function \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2API_ae5528b49178920157febd62a8f1b8179}\label{classNetwork_1_1HTTP2_1_1NgHTTP2API_ae5528b49178920157febd62a8f1b8179}} 
+static int {\bfseries on\+\_\+frame\+\_\+send\+\_\+callback} (nghttp2\+\_\+session $\ast$session, const nghttp2\+\_\+frame $\ast$fame, void $\ast$user\+\_\+data)
+\item 
+static int \hyperlink{classNetwork_1_1HTTP2_1_1NgHTTP2API_a479aebf9b74b978712a20a1db27ab164}{on\+\_\+data\+\_\+chunk\+\_\+recv\+\_\+callback} (nghttp2\+\_\+session $\ast$session, uint8\+\_\+t flags, int32\+\_\+t stream\+\_\+id, const uint8\+\_\+t $\ast$data, size\+\_\+t len, void $\ast$user\+\_\+data)
+\begin{DoxyCompactList}\small\item\em on\+\_\+data\+\_\+chunk\+\_\+recv\+\_\+callback \+: callback function \end{DoxyCompactList}\item 
+static int \hyperlink{classNetwork_1_1HTTP2_1_1NgHTTP2API_ad3e61d93b5d2381d4efccf96ac950ad1}{on\+\_\+stream\+\_\+close\+\_\+callback} (nghttp2\+\_\+session $\ast$session, int32\+\_\+t stream\+\_\+id, uint32\+\_\+t error\+\_\+code, void $\ast$user\+\_\+data)
+\begin{DoxyCompactList}\small\item\em on\+\_\+stream\+\_\+close\+\_\+callback \end{DoxyCompactList}\item 
+static int \hyperlink{classNetwork_1_1HTTP2_1_1NgHTTP2API_a5798eb1a4f55819d0a276be86fe706e9}{on\+\_\+begin\+\_\+headers\+\_\+callback} (nghttp2\+\_\+session $\ast$session, const nghttp2\+\_\+frame $\ast$frame, void $\ast$user\+\_\+data)
+\begin{DoxyCompactList}\small\item\em on\+\_\+begin\+\_\+headers\+\_\+callback \+: callback function \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2API_ab48a1a1b46569fb6ab3e2ecd948ff431}\label{classNetwork_1_1HTTP2_1_1NgHTTP2API_ab48a1a1b46569fb6ab3e2ecd948ff431}} 
+static void {\bfseries delete\+\_\+http2\+\_\+session\+\_\+data} (\hyperlink{structNetwork_1_1HTTP2_1_1http2__session__data}{http2\+\_\+session\+\_\+data} $\ast$session\+\_\+data)
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2API_a8685e090e286b9a4168299a7d89ab2d4}\label{classNetwork_1_1HTTP2_1_1NgHTTP2API_a8685e090e286b9a4168299a7d89ab2d4}} 
+static void {\bfseries print\+\_\+header} (F\+I\+LE $\ast$f, const uint8\+\_\+t $\ast$name, size\+\_\+t namelen, const uint8\+\_\+t $\ast$value, size\+\_\+t valuelen)
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2API_a291da48b0e209ed27c47f950b36b088a}\label{classNetwork_1_1HTTP2_1_1NgHTTP2API_a291da48b0e209ed27c47f950b36b088a}} 
+static void {\bfseries print\+\_\+headers} (F\+I\+LE $\ast$f, nghttp2\+\_\+nv $\ast$nva, size\+\_\+t nvlen)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2API_aafbb434466a988c7b364fd2359d5a273}\label{classNetwork_1_1HTTP2_1_1NgHTTP2API_aafbb434466a988c7b364fd2359d5a273}} 
+H\+T\+T\+P2\+Response\+Header\+Callback {\bfseries m\+\_\+response\+\_\+header\+\_\+callback}
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2API_aff09e9e26af77859c94dcdd3d76f8472}\label{classNetwork_1_1HTTP2_1_1NgHTTP2API_aff09e9e26af77859c94dcdd3d76f8472}} 
+H\+T\+T\+P2\+Response\+Body\+Callback {\bfseries m\+\_\+response\+\_\+body\+\_\+callback}
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2API_ad8c875a52bbdc2e93707698787998d8d}\label{classNetwork_1_1HTTP2_1_1NgHTTP2API_ad8c875a52bbdc2e93707698787998d8d}} 
+void $\ast$ {\bfseries m\+\_\+response\+\_\+user\+\_\+data}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2API_a83fa51a83722d8aeab16465c937cc41f}\label{classNetwork_1_1HTTP2_1_1NgHTTP2API_a83fa51a83722d8aeab16465c937cc41f}} 
+\index{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}!create\+\_\+http2\+\_\+session\+\_\+data@{create\+\_\+http2\+\_\+session\+\_\+data}}
+\index{create\+\_\+http2\+\_\+session\+\_\+data@{create\+\_\+http2\+\_\+session\+\_\+data}!Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}}
+\subsubsection{\texorpdfstring{create\+\_\+http2\+\_\+session\+\_\+data()}{create\_http2\_session\_data()}}
+{\footnotesize\ttfamily \hyperlink{structNetwork_1_1HTTP2_1_1http2__session__data}{http2\+\_\+session\+\_\+data} $\ast$ Ng\+H\+T\+T\+P2\+A\+P\+I\+::create\+\_\+http2\+\_\+session\+\_\+data (\begin{DoxyParamCaption}\item[{struct evdns\+\_\+base $\ast$}]{dnsbase,  }\item[{\hyperlink{classNetwork_1_1HTTP2_1_1NgHTTP2API}{Ng\+H\+T\+T\+P2\+A\+PI} $\ast$}]{api }\end{DoxyParamCaption})}
+
+
+
+create\+\_\+http2\+\_\+session\+\_\+data 
+
+Create H\+T\+T\+P2 Session 
+\begin{DoxyParams}{Parameters}
+{\em evbase} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2API_a3dba39aa33a1c629359d76a66d92ec0d}\label{classNetwork_1_1HTTP2_1_1NgHTTP2API_a3dba39aa33a1c629359d76a66d92ec0d}} 
+\index{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}!create\+\_\+ssl@{create\+\_\+ssl}}
+\index{create\+\_\+ssl@{create\+\_\+ssl}!Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}}
+\subsubsection{\texorpdfstring{create\+\_\+ssl()}{create\_ssl()}}
+{\footnotesize\ttfamily S\+SL $\ast$ Ng\+H\+T\+T\+P2\+A\+P\+I\+::create\+\_\+ssl (\begin{DoxyParamCaption}\item[{S\+S\+L\+\_\+\+C\+TX $\ast$}]{ssl\+\_\+ctx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+create\+\_\+ssl 
+
+Create S\+SL function Invoke from \+: \hyperlink{classNetwork_1_1HTTP2_1_1NgHTTP2API_aaff2b630490f8d10c845996f927fd4d8}{Ng\+H\+T\+T\+P2\+A\+P\+I\+::initiate\+\_\+connection} 
+\begin{DoxyParams}{Parameters}
+{\em ssl\+\_\+ctx} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2API_ac6e30f8c88ca773da99ce34724a7dfd0}\label{classNetwork_1_1HTTP2_1_1NgHTTP2API_ac6e30f8c88ca773da99ce34724a7dfd0}} 
+\index{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}!create\+\_\+ssl\+\_\+ctx@{create\+\_\+ssl\+\_\+ctx}}
+\index{create\+\_\+ssl\+\_\+ctx@{create\+\_\+ssl\+\_\+ctx}!Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}}
+\subsubsection{\texorpdfstring{create\+\_\+ssl\+\_\+ctx()}{create\_ssl\_ctx()}}
+{\footnotesize\ttfamily S\+S\+L\+\_\+\+C\+TX $\ast$ Ng\+H\+T\+T\+P2\+A\+P\+I\+::create\+\_\+ssl\+\_\+ctx (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+create\+\_\+ssl\+\_\+ctx 
+
+Create S\+SL C\+TX \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2API_a419c427d7059d6d1858136f6913a1ae6}\label{classNetwork_1_1HTTP2_1_1NgHTTP2API_a419c427d7059d6d1858136f6913a1ae6}} 
+\index{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}!data\+\_\+source\+\_\+read\+\_\+callback@{data\+\_\+source\+\_\+read\+\_\+callback}}
+\index{data\+\_\+source\+\_\+read\+\_\+callback@{data\+\_\+source\+\_\+read\+\_\+callback}!Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}}
+\subsubsection{\texorpdfstring{data\+\_\+source\+\_\+read\+\_\+callback()}{data\_source\_read\_callback()}}
+{\footnotesize\ttfamily ssize\+\_\+t Ng\+H\+T\+T\+P2\+A\+P\+I\+::data\+\_\+source\+\_\+read\+\_\+callback (\begin{DoxyParamCaption}\item[{nghttp2\+\_\+session $\ast$}]{session,  }\item[{int32\+\_\+t}]{stream\+\_\+id,  }\item[{uint8\+\_\+t $\ast$}]{buf,  }\item[{size\+\_\+t}]{length,  }\item[{uint32\+\_\+t $\ast$}]{data\+\_\+flags,  }\item[{nghttp2\+\_\+data\+\_\+source $\ast$}]{source,  }\item[{void $\ast$}]{user\+\_\+data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+data\+\_\+source\+\_\+read\+\_\+callback \+: callback function 
+
+Read Data Source ( Body Request )
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & \\
+\hline
+{\em stream\+\_\+id} & \\
+\hline
+{\em buf} & \\
+\hline
+{\em length} & \\
+\hline
+{\em data\+\_\+flags} & \\
+\hline
+{\em source} & \\
+\hline
+{\em user\+\_\+data} & \+: \hyperlink{structNetwork_1_1HTTP2_1_1http2__session__data}{http2\+\_\+session\+\_\+data} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2API_a0356d7de7d3df4fa59b91610dcbaf5ef}\label{classNetwork_1_1HTTP2_1_1NgHTTP2API_a0356d7de7d3df4fa59b91610dcbaf5ef}} 
+\index{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}!eventcb@{eventcb}}
+\index{eventcb@{eventcb}!Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}}
+\subsubsection{\texorpdfstring{eventcb()}{eventcb()}}
+{\footnotesize\ttfamily void Ng\+H\+T\+T\+P2\+A\+P\+I\+::eventcb (\begin{DoxyParamCaption}\item[{struct bufferevent $\ast$}]{bev,  }\item[{short}]{events,  }\item[{void $\ast$}]{ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+eventcb \+: callback function 
+
+Buffer\+Event -\/ Managed Events
+
+B\+E\+V\+\_\+\+E\+V\+E\+N\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED B\+E\+V\+\_\+\+E\+V\+E\+N\+T\+\_\+\+E\+OF B\+E\+V\+\_\+\+E\+V\+E\+N\+T\+\_\+\+E\+R\+R\+OR B\+E\+V\+\_\+\+E\+V\+E\+N\+T\+\_\+\+T\+I\+M\+E\+O\+UT
+
+
+\begin{DoxyParams}{Parameters}
+{\em bev} & \\
+\hline
+{\em events} & \\
+\hline
+{\em ptr} & \+: http\+\_\+session\+\_\+data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2API_ac54322656bb0db60581bbcae17a18e1a}\label{classNetwork_1_1HTTP2_1_1NgHTTP2API_ac54322656bb0db60581bbcae17a18e1a}} 
+\index{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}!initialize\+\_\+nghttp2\+\_\+session@{initialize\+\_\+nghttp2\+\_\+session}}
+\index{initialize\+\_\+nghttp2\+\_\+session@{initialize\+\_\+nghttp2\+\_\+session}!Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}}
+\subsubsection{\texorpdfstring{initialize\+\_\+nghttp2\+\_\+session()}{initialize\_nghttp2\_session()}}
+{\footnotesize\ttfamily void Ng\+H\+T\+T\+P2\+A\+P\+I\+::initialize\+\_\+nghttp2\+\_\+session (\begin{DoxyParamCaption}\item[{\hyperlink{structNetwork_1_1HTTP2_1_1http2__session__data}{http2\+\_\+session\+\_\+data} $\ast$}]{session\+\_\+data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+initialize\+\_\+nghttp2\+\_\+session 
+
+Create nghttp2\+\_\+session
+
+and setup callbacks 
+\begin{DoxyParams}{Parameters}
+{\em session\+\_\+data} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2API_aaff2b630490f8d10c845996f927fd4d8}\label{classNetwork_1_1HTTP2_1_1NgHTTP2API_aaff2b630490f8d10c845996f927fd4d8}} 
+\index{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}!initiate\+\_\+connection@{initiate\+\_\+connection}}
+\index{initiate\+\_\+connection@{initiate\+\_\+connection}!Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}}
+\subsubsection{\texorpdfstring{initiate\+\_\+connection()}{initiate\_connection()}}
+{\footnotesize\ttfamily void Ng\+H\+T\+T\+P2\+A\+P\+I\+::initiate\+\_\+connection (\begin{DoxyParamCaption}\item[{struct event\+\_\+base $\ast$}]{evbase,  }\item[{S\+S\+L\+\_\+\+C\+TX $\ast$}]{ssl\+\_\+ctx,  }\item[{const char $\ast$}]{host,  }\item[{uint16\+\_\+t}]{port,  }\item[{\hyperlink{structNetwork_1_1HTTP2_1_1http2__session__data}{http2\+\_\+session\+\_\+data} $\ast$}]{session\+\_\+data }\end{DoxyParamCaption})}
+
+
+
+initiate\+\_\+connection 
+
+Initiate Connection to the remote peer 
+\begin{DoxyParams}{Parameters}
+{\em evbase} & \\
+\hline
+{\em ssl\+\_\+ctx} & \\
+\hline
+{\em host} & \\
+\hline
+{\em port} & \\
+\hline
+{\em session\+\_\+data} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2API_a5798eb1a4f55819d0a276be86fe706e9}\label{classNetwork_1_1HTTP2_1_1NgHTTP2API_a5798eb1a4f55819d0a276be86fe706e9}} 
+\index{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}!on\+\_\+begin\+\_\+headers\+\_\+callback@{on\+\_\+begin\+\_\+headers\+\_\+callback}}
+\index{on\+\_\+begin\+\_\+headers\+\_\+callback@{on\+\_\+begin\+\_\+headers\+\_\+callback}!Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}}
+\subsubsection{\texorpdfstring{on\+\_\+begin\+\_\+headers\+\_\+callback()}{on\_begin\_headers\_callback()}}
+{\footnotesize\ttfamily int Ng\+H\+T\+T\+P2\+A\+P\+I\+::on\+\_\+begin\+\_\+headers\+\_\+callback (\begin{DoxyParamCaption}\item[{nghttp2\+\_\+session $\ast$}]{session,  }\item[{const nghttp2\+\_\+frame $\ast$}]{frame,  }\item[{void $\ast$}]{user\+\_\+data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+on\+\_\+begin\+\_\+headers\+\_\+callback \+: callback function 
+
+Callback function invoked when the reception of header block in H\+E\+A\+D\+E\+RS or P\+U\+S\+H\+\_\+\+P\+R\+O\+M\+I\+SE is started. Each header name/value pair will be emitted by nghttp2\+\_\+on\+\_\+header\+\_\+callback.
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & \\
+\hline
+{\em frame} & \\
+\hline
+{\em user\+\_\+data} & \+: \hyperlink{structNetwork_1_1HTTP2_1_1http2__session__data}{http2\+\_\+session\+\_\+data} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2API_a479aebf9b74b978712a20a1db27ab164}\label{classNetwork_1_1HTTP2_1_1NgHTTP2API_a479aebf9b74b978712a20a1db27ab164}} 
+\index{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}!on\+\_\+data\+\_\+chunk\+\_\+recv\+\_\+callback@{on\+\_\+data\+\_\+chunk\+\_\+recv\+\_\+callback}}
+\index{on\+\_\+data\+\_\+chunk\+\_\+recv\+\_\+callback@{on\+\_\+data\+\_\+chunk\+\_\+recv\+\_\+callback}!Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}}
+\subsubsection{\texorpdfstring{on\+\_\+data\+\_\+chunk\+\_\+recv\+\_\+callback()}{on\_data\_chunk\_recv\_callback()}}
+{\footnotesize\ttfamily int Ng\+H\+T\+T\+P2\+A\+P\+I\+::on\+\_\+data\+\_\+chunk\+\_\+recv\+\_\+callback (\begin{DoxyParamCaption}\item[{nghttp2\+\_\+session $\ast$}]{session,  }\item[{uint8\+\_\+t}]{flags,  }\item[{int32\+\_\+t}]{stream\+\_\+id,  }\item[{const uint8\+\_\+t $\ast$}]{data,  }\item[{size\+\_\+t}]{len,  }\item[{void $\ast$}]{user\+\_\+data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+on\+\_\+data\+\_\+chunk\+\_\+recv\+\_\+callback \+: callback function 
+
+Callback function invoked when a chunk of data in D\+A\+TA frame is received.
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & \\
+\hline
+{\em flags} & \\
+\hline
+{\em stream\+\_\+id} & \\
+\hline
+{\em data} & \\
+\hline
+{\em len} & \\
+\hline
+{\em user\+\_\+data} & \+: \hyperlink{structNetwork_1_1HTTP2_1_1http2__session__data}{http2\+\_\+session\+\_\+data} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2API_adc5ac253870d245cee1ce1c890b7b4e6}\label{classNetwork_1_1HTTP2_1_1NgHTTP2API_adc5ac253870d245cee1ce1c890b7b4e6}} 
+\index{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}!on\+\_\+frame\+\_\+recv\+\_\+callback@{on\+\_\+frame\+\_\+recv\+\_\+callback}}
+\index{on\+\_\+frame\+\_\+recv\+\_\+callback@{on\+\_\+frame\+\_\+recv\+\_\+callback}!Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}}
+\subsubsection{\texorpdfstring{on\+\_\+frame\+\_\+recv\+\_\+callback()}{on\_frame\_recv\_callback()}}
+{\footnotesize\ttfamily int Ng\+H\+T\+T\+P2\+A\+P\+I\+::on\+\_\+frame\+\_\+recv\+\_\+callback (\begin{DoxyParamCaption}\item[{nghttp2\+\_\+session $\ast$}]{session,  }\item[{const nghttp2\+\_\+frame $\ast$}]{frame,  }\item[{void $\ast$}]{user\+\_\+data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+on\+\_\+frame\+\_\+recv\+\_\+callback \+: callback function 
+
+Callback function invoked by nghttp2\+\_\+session\+\_\+recv() and nghttp2\+\_\+session\+\_\+mem\+\_\+recv() when a frame is received.
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & \\
+\hline
+{\em frame} & \\
+\hline
+{\em user\+\_\+data} & \+: \hyperlink{structNetwork_1_1HTTP2_1_1http2__session__data}{http2\+\_\+session\+\_\+data} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2API_a64f69e8e4726d3baec216cfeb786e6fe}\label{classNetwork_1_1HTTP2_1_1NgHTTP2API_a64f69e8e4726d3baec216cfeb786e6fe}} 
+\index{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}!on\+\_\+header\+\_\+callback@{on\+\_\+header\+\_\+callback}}
+\index{on\+\_\+header\+\_\+callback@{on\+\_\+header\+\_\+callback}!Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}}
+\subsubsection{\texorpdfstring{on\+\_\+header\+\_\+callback()}{on\_header\_callback()}}
+{\footnotesize\ttfamily int Ng\+H\+T\+T\+P2\+A\+P\+I\+::on\+\_\+header\+\_\+callback (\begin{DoxyParamCaption}\item[{nghttp2\+\_\+session $\ast$}]{session,  }\item[{const nghttp2\+\_\+frame $\ast$}]{frame,  }\item[{const uint8\+\_\+t $\ast$}]{name,  }\item[{size\+\_\+t}]{namelen,  }\item[{const uint8\+\_\+t $\ast$}]{value,  }\item[{size\+\_\+t}]{valuelen,  }\item[{uint8\+\_\+t}]{flags,  }\item[{void $\ast$}]{user\+\_\+data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+on\+\_\+header\+\_\+callback \+: callback function 
+
+Callback function invoked when a header name/value pair is received for the frame.
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & \\
+\hline
+{\em frame} & \\
+\hline
+{\em name} & \\
+\hline
+{\em namelen} & \\
+\hline
+{\em value} & \\
+\hline
+{\em valuelen} & \\
+\hline
+{\em flags} & \\
+\hline
+{\em user\+\_\+data} & \+: \hyperlink{structNetwork_1_1HTTP2_1_1http2__session__data}{http2\+\_\+session\+\_\+data} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2API_ad3e61d93b5d2381d4efccf96ac950ad1}\label{classNetwork_1_1HTTP2_1_1NgHTTP2API_ad3e61d93b5d2381d4efccf96ac950ad1}} 
+\index{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}!on\+\_\+stream\+\_\+close\+\_\+callback@{on\+\_\+stream\+\_\+close\+\_\+callback}}
+\index{on\+\_\+stream\+\_\+close\+\_\+callback@{on\+\_\+stream\+\_\+close\+\_\+callback}!Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}}
+\subsubsection{\texorpdfstring{on\+\_\+stream\+\_\+close\+\_\+callback()}{on\_stream\_close\_callback()}}
+{\footnotesize\ttfamily int Ng\+H\+T\+T\+P2\+A\+P\+I\+::on\+\_\+stream\+\_\+close\+\_\+callback (\begin{DoxyParamCaption}\item[{nghttp2\+\_\+session $\ast$}]{session,  }\item[{int32\+\_\+t}]{stream\+\_\+id,  }\item[{uint32\+\_\+t}]{error\+\_\+code,  }\item[{void $\ast$}]{user\+\_\+data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+on\+\_\+stream\+\_\+close\+\_\+callback 
+
+Callback function invoked when the stream stream\+\_\+id is closed
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & \\
+\hline
+{\em stream\+\_\+id} & \\
+\hline
+{\em error\+\_\+code} & \\
+\hline
+{\em user\+\_\+data} & \+: \hyperlink{structNetwork_1_1HTTP2_1_1http2__session__data}{http2\+\_\+session\+\_\+data} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2API_a9f3146f288f2fb033296b6e43564cc7b}\label{classNetwork_1_1HTTP2_1_1NgHTTP2API_a9f3146f288f2fb033296b6e43564cc7b}} 
+\index{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}!readcb@{readcb}}
+\index{readcb@{readcb}!Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}}
+\subsubsection{\texorpdfstring{readcb()}{readcb()}}
+{\footnotesize\ttfamily void Ng\+H\+T\+T\+P2\+A\+P\+I\+::readcb (\begin{DoxyParamCaption}\item[{struct bufferevent $\ast$}]{bev,  }\item[{void $\ast$}]{ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+readcb \+: callback function 
+
+incoming data from the remote peer 
+\begin{DoxyParams}{Parameters}
+{\em bev} & \\
+\hline
+{\em ptr} & \+: http\+\_\+session\+\_\+data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2API_af03f36272bba30d171567765cde46c86}\label{classNetwork_1_1HTTP2_1_1NgHTTP2API_af03f36272bba30d171567765cde46c86}} 
+\index{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}!select\+\_\+next\+\_\+proto\+\_\+cb@{select\+\_\+next\+\_\+proto\+\_\+cb}}
+\index{select\+\_\+next\+\_\+proto\+\_\+cb@{select\+\_\+next\+\_\+proto\+\_\+cb}!Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}}
+\subsubsection{\texorpdfstring{select\+\_\+next\+\_\+proto\+\_\+cb()}{select\_next\_proto\_cb()}}
+{\footnotesize\ttfamily int Ng\+H\+T\+T\+P2\+A\+P\+I\+::select\+\_\+next\+\_\+proto\+\_\+cb (\begin{DoxyParamCaption}\item[{S\+SL $\ast$}]{ssl,  }\item[{unsigned char $\ast$$\ast$}]{out,  }\item[{unsigned char $\ast$}]{outlen,  }\item[{const unsigned char $\ast$}]{in,  }\item[{unsigned int}]{inlen,  }\item[{void $\ast$}]{arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+select\+\_\+next\+\_\+proto\+\_\+cb \+: callback function 
+
+Callback function for create\+\_\+ssl\+\_\+ctx 
+\begin{DoxyParams}{Parameters}
+{\em ssl} & \\
+\hline
+{\em out} & \\
+\hline
+{\em outlen} & \\
+\hline
+{\em in} & \\
+\hline
+{\em inlen} & \\
+\hline
+{\em arg} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2API_aef0ee4f04992e02b2aa2916e89e03114}\label{classNetwork_1_1HTTP2_1_1NgHTTP2API_aef0ee4f04992e02b2aa2916e89e03114}} 
+\index{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}!send\+\_\+callback@{send\+\_\+callback}}
+\index{send\+\_\+callback@{send\+\_\+callback}!Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}}
+\subsubsection{\texorpdfstring{send\+\_\+callback()}{send\_callback()}}
+{\footnotesize\ttfamily ssize\+\_\+t Ng\+H\+T\+T\+P2\+A\+P\+I\+::send\+\_\+callback (\begin{DoxyParamCaption}\item[{nghttp2\+\_\+session $\ast$}]{session,  }\item[{const uint8\+\_\+t $\ast$}]{data,  }\item[{size\+\_\+t}]{length,  }\item[{int}]{flags,  }\item[{void $\ast$}]{user\+\_\+data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+send\+\_\+callback \+: callback function 
+
+send all data to the remote peer invoke\+: bufferevent\+\_\+write
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & \\
+\hline
+{\em data} & \\
+\hline
+{\em length} & \\
+\hline
+{\em flags} & \\
+\hline
+{\em user\+\_\+data} & \+: \hyperlink{structNetwork_1_1HTTP2_1_1http2__session__data}{http2\+\_\+session\+\_\+data} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2API_aaf79d1a5a4e907ba727c8a5b8520c7ae}\label{classNetwork_1_1HTTP2_1_1NgHTTP2API_aaf79d1a5a4e907ba727c8a5b8520c7ae}} 
+\index{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}!send\+\_\+client\+\_\+connection\+\_\+header@{send\+\_\+client\+\_\+connection\+\_\+header}}
+\index{send\+\_\+client\+\_\+connection\+\_\+header@{send\+\_\+client\+\_\+connection\+\_\+header}!Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}}
+\subsubsection{\texorpdfstring{send\+\_\+client\+\_\+connection\+\_\+header()}{send\_client\_connection\_header()}}
+{\footnotesize\ttfamily void Ng\+H\+T\+T\+P2\+A\+P\+I\+::send\+\_\+client\+\_\+connection\+\_\+header (\begin{DoxyParamCaption}\item[{\hyperlink{structNetwork_1_1HTTP2_1_1http2__session__data}{http2\+\_\+session\+\_\+data} $\ast$}]{session\+\_\+data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+send\+\_\+client\+\_\+connection\+\_\+header 
+
+
+\begin{DoxyParams}{Parameters}
+{\em session\+\_\+data} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2API_a98fcbd6599625a1fdaec14f49095bc7a}\label{classNetwork_1_1HTTP2_1_1NgHTTP2API_a98fcbd6599625a1fdaec14f49095bc7a}} 
+\index{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}!session\+\_\+send@{session\+\_\+send}}
+\index{session\+\_\+send@{session\+\_\+send}!Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}}
+\subsubsection{\texorpdfstring{session\+\_\+send()}{session\_send()}}
+{\footnotesize\ttfamily int Ng\+H\+T\+T\+P2\+A\+P\+I\+::session\+\_\+send (\begin{DoxyParamCaption}\item[{\hyperlink{structNetwork_1_1HTTP2_1_1http2__session__data}{http2\+\_\+session\+\_\+data} $\ast$}]{session\+\_\+data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+session\+\_\+send 
+
+send all data to the remote peer invoke\+: send\+\_\+callback
+
+
+\begin{DoxyParams}{Parameters}
+{\em session\+\_\+data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2API_a83048a73d75bda59e9f6b1c97039468e}\label{classNetwork_1_1HTTP2_1_1NgHTTP2API_a83048a73d75bda59e9f6b1c97039468e}} 
+\index{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}!set\+Read\+Callback@{set\+Read\+Callback}}
+\index{set\+Read\+Callback@{set\+Read\+Callback}!Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}}
+\subsubsection{\texorpdfstring{set\+Read\+Callback()}{setReadCallback()}}
+{\footnotesize\ttfamily void Ng\+H\+T\+T\+P2\+A\+P\+I\+::set\+Read\+Callback (\begin{DoxyParamCaption}\item[{H\+T\+T\+P2\+Response\+Header\+Callback}]{header,  }\item[{H\+T\+T\+P2\+Response\+Body\+Callback}]{body,  }\item[{void $\ast$}]{user\+\_\+data }\end{DoxyParamCaption})}
+
+
+
+set\+Read\+Callback 
+
+Set Response Callbacks 
+\begin{DoxyParams}{Parameters}
+{\em header} & \+: Header\+Callback \\
+\hline
+{\em body} & \+: Body\+Callback \\
+\hline
+{\em user\+\_\+data} & \+: custom ptr to save / copy response data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2API_a6ed7953f91c559adef118fbfa7e96d46}\label{classNetwork_1_1HTTP2_1_1NgHTTP2API_a6ed7953f91c559adef118fbfa7e96d46}} 
+\index{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}!submit\+\_\+data@{submit\+\_\+data}}
+\index{submit\+\_\+data@{submit\+\_\+data}!Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}}
+\subsubsection{\texorpdfstring{submit\+\_\+data()}{submit\_data()}}
+{\footnotesize\ttfamily void Ng\+H\+T\+T\+P2\+A\+P\+I\+::submit\+\_\+data (\begin{DoxyParamCaption}\item[{\hyperlink{structNetwork_1_1HTTP2_1_1http2__session__data}{http2\+\_\+session\+\_\+data} $\ast$}]{session\+\_\+data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+submit\+\_\+data 
+
+set Source data for new stream id 
+\begin{DoxyParams}{Parameters}
+{\em session\+\_\+data} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2API_a27e408f85d4199cd26250c59ba13553f}\label{classNetwork_1_1HTTP2_1_1NgHTTP2API_a27e408f85d4199cd26250c59ba13553f}} 
+\index{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}!submit\+\_\+request@{submit\+\_\+request}}
+\index{submit\+\_\+request@{submit\+\_\+request}!Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}}
+\subsubsection{\texorpdfstring{submit\+\_\+request()}{submit\_request()}}
+{\footnotesize\ttfamily void Ng\+H\+T\+T\+P2\+A\+P\+I\+::submit\+\_\+request (\begin{DoxyParamCaption}\item[{\hyperlink{structNetwork_1_1HTTP2_1_1http2__session__data}{http2\+\_\+session\+\_\+data} $\ast$}]{session\+\_\+data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+make stream id \mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2API_a5d047441518239869e1c699323ee3c92}\label{classNetwork_1_1HTTP2_1_1NgHTTP2API_a5d047441518239869e1c699323ee3c92}} 
+\index{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}!writecb@{writecb}}
+\index{writecb@{writecb}!Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+A\+PI}}
+\subsubsection{\texorpdfstring{writecb()}{writecb()}}
+{\footnotesize\ttfamily void Ng\+H\+T\+T\+P2\+A\+P\+I\+::writecb (\begin{DoxyParamCaption}\item[{struct bufferevent $\ast$}]{bev,  }\item[{void $\ast$}]{ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+writecb \+: callback function 
+
+send data to the remote peer 
+\begin{DoxyParams}{Parameters}
+{\em bev} & \\
+\hline
+{\em ptr} & \+: http\+\_\+session\+\_\+data \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/mutzi/progs/linux\+\_\+workspace/alexa-\/avs-\/prototype/src/include/nghttp2api.\+h\item 
+/home/mutzi/progs/linux\+\_\+workspace/alexa-\/avs-\/prototype/src/nghttp2api.\+cpp\end{DoxyCompactItemize}

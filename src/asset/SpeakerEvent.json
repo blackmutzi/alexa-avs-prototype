@@ -1,0 +1,13 @@
+{
+    "event": {
+        "header": {
+            "namespace": "Speaker",
+            "name": "{{EVENT_NAME}}",
+            "messageId": "{{MESSAGE_ID_STRING}}"
+        },
+        "payload": {
+            "volume": "{{VOLUME}}",
+            "muted": "{{MUTED}}"
+        }
+    }
+}

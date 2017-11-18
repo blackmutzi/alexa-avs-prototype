@@ -1,0 +1,67 @@
+\href{https://developer.amazon.com/de/alexa-voice-service}{\tt } \section*{alexa-\/avs-\/prototype ( C++ )}
+
+Alexa Voice Service (A\+VS) client in C++ for raspberry pi or any Linux Distribution -\/ This is a work in progress. Project is tested with Linux Gentoo(x86\+\_\+64) and Raspbian(\+A\+R\+M). \section*{What is A\+VS?}
+
+Alexa Voice Service (A\+VS) is Amazon’s intelligent voice recognition and natural language understanding service that allows you as a developer to voice-\/enable any connected device that has a microphone and speaker. \section*{What you need?}
+
+
+\begin{DoxyItemize}
+\item A Linux Distribution with Pulse\+Audio Support.
+\item Amazon Developer Account.
+\item Follow the steps \href{https://github.com/alexa/alexa-avs-sample-app/wiki/Raspberry-Pi}{\tt here} to create a security profile.
+\item From Security Profile, you need Product\+ID, Client\+ID, and Client\+Secret.
+\item And a Wake\+Word\+Engine Client from \href{https://github.com/alexa/alexa-avs-sample-app/tree/master/samples/wakeWordAgent}{\tt here}.
+\end{DoxyItemize}
+
+\# Download it 
+\begin{DoxyCode}
+git clone https://github.com/blackmutzi/alexa-avs-prototype
+cd ./alexa-avs-prototype
+\end{DoxyCode}
+ \# Build it 
+\begin{DoxyCode}
+qmake AVS-Prototype.pro
+make -j2
+\end{DoxyCode}
+ \section*{A\+VS Configuration}
+
+\paragraph*{First Step}
+
+go to config directory and modify config.\+json file 
+\begin{DoxyCode}
+cd ./alexa-avs-prototype/config/
+nano config.json 
+\end{DoxyCode}
+ and set only client\+\_\+id, client\+\_\+secret and product\+\_\+id. \paragraph*{Second Step}
+
+run the A\+VS Prototype Client ... 
+\begin{DoxyCode}
+chmod +x ./AVS-Prototype
+./AVS-Prototype
+\end{DoxyCode}
+ the A\+V\+S-\/\+Client show you a link, copy it. And login into the Amazon Security Profile Website. Then copy den code\+\_\+grant key and save it into the config.\+json. And Restart again A\+V\+S-\/\+Prototype. F\+I\+N\+I\+SH Configuration. A\+V\+S-\/\+Prototpye Client is now permanent R\+E\+A\+DY. \section*{D\+E\+P\+E\+N\+DS ( debian / raspbian packages )}
+
+
+\begin{DoxyItemize}
+\item libevent-\/dev ( version 2.\+0.\+5 )
+\item libmp3lame-\/dev ( version 3.\+99.\+5 )
+\item libcurl-\/dev ( version 7.\+54.\+0 )
+\item libssl-\/dev ( version 1.\+0.\+2 -\/ A\+L\+PN h2 Protocol needed )
+\item libboost-\/all-\/dev ( tested version with 1.\+55 , 1.\+63 )
+\item libasound2-\/dev ( version 1.\+0.\+28 )
+\item libnghttp2-\/dev ( version 1.\+18.\+1-\/1 , 1.\+22.\+0 , 1.\+24.\+0 or higher ) \section*{Known Bugs\+:}
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item libboost-\/all-\/dev version 1.\+62 -\/ compile error
+\item libnghttp2-\/dev version 0.\+6.\+4.\+2 -\/ to much nghttp2 Bugs ( required 1.\+22.\+0 or higher )
+\item libssl-\/dev version 1.\+0.\+1 -\/ A\+L\+PN protocol\+: h2 is not negotiated error message ( required version 1.\+0.\+2 ) \section*{solution for libssl-\/dev and libnghttp2-\/dev}
+\end{DoxyItemize}
+
+add two \href{https://github.com/superjamie/lazyweb/wiki/Raspberry-Pi-Debian-Backports}{\tt repositorys} stretch and jessie-\/backports into /etc/apt/sources.list file. get libssl-\/dev and libnghttp2-\/dev 
+\begin{DoxyCode}
+apt-get -t jessie-backports install libssl-dev
+apt-get -t stretch install libnghttp2-dev
+\end{DoxyCode}
+ after remove repositorys and run apt-\/get update. F\+I\+N\+I\+SH. 

@@ -1,0 +1,90 @@
+\hypertarget{classNetwork_1_1HTTP2_1_1HTTP2Client}{}\section{Network\+:\+:H\+T\+T\+P2\+:\+:H\+T\+T\+P2\+Client Class Reference}
+\label{classNetwork_1_1HTTP2_1_1HTTP2Client}\index{Network\+::\+H\+T\+T\+P2\+::\+H\+T\+T\+P2\+Client@{Network\+::\+H\+T\+T\+P2\+::\+H\+T\+T\+P2\+Client}}
+Inheritance diagram for Network\+:\+:H\+T\+T\+P2\+:\+:H\+T\+T\+P2\+Client\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{de/d9b/classNetwork_1_1HTTP2_1_1HTTP2Client}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1HTTP2Client_a29102db8089b67719318850c187a9461}\label{classNetwork_1_1HTTP2_1_1HTTP2Client_a29102db8089b67719318850c187a9461}} 
+{\bfseries H\+T\+T\+P2\+Client} (const string url)
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1HTTP2Client_af1623f17ea95731422d9f1d3b30bacc3}\label{classNetwork_1_1HTTP2_1_1HTTP2Client_af1623f17ea95731422d9f1d3b30bacc3}} 
+void {\bfseries init\+Connection} (nghttp2\+\_\+nv $\ast$header\+\_\+data, size\+\_\+t header\+\_\+len, int $\ast$stream\+\_\+status)
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1HTTP2Client_a9c27847775264d7a22a3bfb521c6cb9e}\label{classNetwork_1_1HTTP2_1_1HTTP2Client_a9c27847775264d7a22a3bfb521c6cb9e}} 
+void {\bfseries push\+Stream\+Request} (Stream\+Queue\+Event event)
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1HTTP2Client_a3c7c129cb3df6bd54c08ece2cfa47a9e}\label{classNetwork_1_1HTTP2_1_1HTTP2Client_a3c7c129cb3df6bd54c08ece2cfa47a9e}} 
+\hyperlink{classNetwork_1_1HTTP2_1_1HTTP2ClientEventManager}{H\+T\+T\+P2\+Client\+Event\+Manager} $\ast$ {\bfseries get\+Event\+Manager} (void)
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1HTTP2Client_afa6dd0f850970813f0d4727ce89a68cc}\label{classNetwork_1_1HTTP2_1_1HTTP2Client_afa6dd0f850970813f0d4727ce89a68cc}} 
+\hyperlink{classNetwork_1_1HTTP_1_1HTTPResponse}{H\+T\+T\+P\+Response} $\ast$ {\bfseries get\+Response} (void)
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1HTTP2Client_a13d1a42037119b5cb0dfb34c47beb9ef}\label{classNetwork_1_1HTTP2_1_1HTTP2Client_a13d1a42037119b5cb0dfb34c47beb9ef}} 
+void {\bfseries on\+Response\+Event} (\hyperlink{structNetwork_1_1HTTP2_1_1HTTP2HandlerResponse}{H\+T\+T\+P2\+Handler\+Response} $\ast$response)
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1HTTP2Client_af3f0eae097815ff7c1c706dae9934382}\label{classNetwork_1_1HTTP2_1_1HTTP2Client_af3f0eae097815ff7c1c706dae9934382}} 
+void {\bfseries on\+Response\+Header\+Status\+Event} (const char $\ast$status\+\_\+code)
+\item 
+void \hyperlink{classNetwork_1_1HTTP2_1_1HTTP2Client_a5c5cd10569102998104f2124a3c7a119}{stream\+\_\+loop} (struct event\+\_\+base $\ast$evbase)
+\begin{DoxyCompactList}\small\item\em stream\+\_\+loop \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1HTTP2Client_a8b134b7cf7b96b2b1c7f6f65636b630e}\label{classNetwork_1_1HTTP2_1_1HTTP2Client_a8b134b7cf7b96b2b1c7f6f65636b630e}} 
+virtual \hyperlink{structNetwork_1_1HTTP2_1_1StreamQueueData}{Stream\+Queue\+Data} $\ast$ {\bfseries on\+Process\+Stream\+Event} (Stream\+Queue\+Event event)=0
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1HTTP2Client_aeecc6cec389077e163cee57bb1e626b0}\label{classNetwork_1_1HTTP2_1_1HTTP2Client_aeecc6cec389077e163cee57bb1e626b0}} 
+virtual void {\bfseries on\+Stream\+Loop\+Start\+Event} (void)=0
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1HTTP2Client_a286cbb2cb6406ddd6514aeee757f2aae}\label{classNetwork_1_1HTTP2_1_1HTTP2Client_a286cbb2cb6406ddd6514aeee757f2aae}} 
+virtual void {\bfseries on\+Stream\+Loop\+Wait\+Event} (void)=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1HTTP2Client_a0038606058e6f5dd9f77adfced2a7ffe}\label{classNetwork_1_1HTTP2_1_1HTTP2Client_a0038606058e6f5dd9f77adfced2a7ffe}} 
+std\+::string {\bfseries m\+\_\+base\+\_\+url}
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1HTTP2Client_afad154fd7ed41e5c7f0f8829952ff44f}\label{classNetwork_1_1HTTP2_1_1HTTP2Client_afad154fd7ed41e5c7f0f8829952ff44f}} 
+\hyperlink{structNetwork_1_1HTTP2_1_1HTTP2HandlerResponse}{H\+T\+T\+P2\+Handler\+Response} $\ast$ {\bfseries m\+\_\+http2\+\_\+handler\+\_\+response}
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1HTTP2Client_a83fe546902bc6be3fd2006c9517cb218}\label{classNetwork_1_1HTTP2_1_1HTTP2Client_a83fe546902bc6be3fd2006c9517cb218}} 
+\hyperlink{classNetwork_1_1HTTP2_1_1NgHTTP2ResponseManager}{Ng\+H\+T\+T\+P2\+Response\+Manager} $\ast$ {\bfseries m\+\_\+http2\+\_\+response\+\_\+manager}
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1HTTP2Client_a54262bf3e08d6ad8a6eca39fe8d6b02f}\label{classNetwork_1_1HTTP2_1_1HTTP2Client_a54262bf3e08d6ad8a6eca39fe8d6b02f}} 
+\hyperlink{classNetwork_1_1HTTP2_1_1HTTP2ClientEventManager}{H\+T\+T\+P2\+Client\+Event\+Manager} $\ast$ {\bfseries m\+\_\+http2\+\_\+event\+\_\+manager}
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1HTTP2Client_a82bad5a94c9004a1e586a53bd99c8b3b}\label{classNetwork_1_1HTTP2_1_1HTTP2Client_a82bad5a94c9004a1e586a53bd99c8b3b}} 
+\hyperlink{classNetwork_1_1HTTP_1_1HTTPResponse}{H\+T\+T\+P\+Response} $\ast$ {\bfseries m\+\_\+http\+\_\+output\+\_\+response}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1HTTP2Client_a5c5cd10569102998104f2124a3c7a119}\label{classNetwork_1_1HTTP2_1_1HTTP2Client_a5c5cd10569102998104f2124a3c7a119}} 
+\index{Network\+::\+H\+T\+T\+P2\+::\+H\+T\+T\+P2\+Client@{Network\+::\+H\+T\+T\+P2\+::\+H\+T\+T\+P2\+Client}!stream\+\_\+loop@{stream\+\_\+loop}}
+\index{stream\+\_\+loop@{stream\+\_\+loop}!Network\+::\+H\+T\+T\+P2\+::\+H\+T\+T\+P2\+Client@{Network\+::\+H\+T\+T\+P2\+::\+H\+T\+T\+P2\+Client}}
+\subsubsection{\texorpdfstring{stream\+\_\+loop()}{stream\_loop()}}
+{\footnotesize\ttfamily void H\+T\+T\+P2\+Client\+::stream\+\_\+loop (\begin{DoxyParamCaption}\item[{struct event\+\_\+base $\ast$}]{evbase }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+stream\+\_\+loop 
+
+override it ... 
+\begin{DoxyParams}{Parameters}
+{\em handler} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classNetwork_1_1HTTP2_1_1NgHTTP2MultiplexHandler_a95e9df9737af24d79894320e8cb343de}{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+Multiplex\+Handler}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/mutzi/progs/linux\+\_\+workspace/alexa-\/avs-\/prototype/src/include/http2client.\+h\item 
+/home/mutzi/progs/linux\+\_\+workspace/alexa-\/avs-\/prototype/src/http2client.\+cpp\end{DoxyCompactItemize}

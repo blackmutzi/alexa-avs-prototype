@@ -1,0 +1,64 @@
+\hypertarget{classAVSRequestBuilder}{}\section{A\+V\+S\+Request\+Builder Class Reference}
+\label{classAVSRequestBuilder}\index{A\+V\+S\+Request\+Builder@{A\+V\+S\+Request\+Builder}}
+
+
+The \hyperlink{classAVSRequestBuilder}{A\+V\+S\+Request\+Builder} class.  
+
+
+
+
+{\ttfamily \#include $<$avsrequestbuilder.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAVSRequestBuilder_aad07747e25a7ca802ca2033a808f691a}\label{classAVSRequestBuilder_aad07747e25a7ca802ca2033a808f691a}} 
+{\bfseries A\+V\+S\+Request\+Builder} (\hyperlink{classNetwork_1_1HTTP2_1_1HTTP2Client}{H\+T\+T\+P2\+Client} $\ast$client, const std\+::string access\+\_\+token, const std\+::string boundary)
+\item 
+\mbox{\Hypertarget{classAVSRequestBuilder_ae3e41597c71041e80ed80a3e9988bf4d}\label{classAVSRequestBuilder_ae3e41597c71041e80ed80a3e9988bf4d}} 
+void {\bfseries invoke\+Downchannel\+Stream} (void)
+\item 
+\mbox{\Hypertarget{classAVSRequestBuilder_a7ae94bd81412f37e0c4a4f57c12ead88}\label{classAVSRequestBuilder_a7ae94bd81412f37e0c4a4f57c12ead88}} 
+\hyperlink{structNetwork_1_1HTTP2_1_1StreamQueueData}{Stream\+Queue\+Data} $\ast$ {\bfseries build\+Ping\+Stream} (void)
+\item 
+\mbox{\Hypertarget{classAVSRequestBuilder_a05c5f0f8615e1279b47dce8c06bdc617}\label{classAVSRequestBuilder_a05c5f0f8615e1279b47dce8c06bdc617}} 
+\hyperlink{structNetwork_1_1HTTP2_1_1StreamQueueData}{Stream\+Queue\+Data} $\ast$ {\bfseries build\+Event\+Stream} (const std\+::string json\+\_\+object)
+\item 
+\mbox{\Hypertarget{classAVSRequestBuilder_a1b996a3a7414d561f6168289f89464e5}\label{classAVSRequestBuilder_a1b996a3a7414d561f6168289f89464e5}} 
+\hyperlink{structNetwork_1_1HTTP2_1_1StreamQueueData}{Stream\+Queue\+Data} $\ast$ {\bfseries build\+Recognize\+Stream} (const \hyperlink{structAVSJson_1_1SynchronizeStateEvent}{A\+V\+S\+Json\+::\+Synchronize\+State\+Event} $\ast$event, const std\+::string dialog\+\_\+request\+\_\+id, const char $\ast$audio\+\_\+data, size\+\_\+t audio\+\_\+len)
+\item 
+\mbox{\Hypertarget{classAVSRequestBuilder_acc396d71f3678aa9d90b548adec9bbb7}\label{classAVSRequestBuilder_acc396d71f3678aa9d90b548adec9bbb7}} 
+\hyperlink{structNetwork_1_1HTTP2_1_1StreamQueueData}{Stream\+Queue\+Data} $\ast$ {\bfseries build\+Sync\+Stream} (const \hyperlink{structAVSJson_1_1SynchronizeStateEvent}{A\+V\+S\+Json\+::\+Synchronize\+State\+Event} $\ast$event)
+\item 
+\mbox{\Hypertarget{classAVSRequestBuilder_a9ae18a6d37d3d62d964c275f5a2f3d7f}\label{classAVSRequestBuilder_a9ae18a6d37d3d62d964c275f5a2f3d7f}} 
+void {\bfseries change\+Access\+Token} (std\+::string access\+\_\+token)
+\item 
+\mbox{\Hypertarget{classAVSRequestBuilder_a2aa434deae2d8ad4cc43b855c43d404a}\label{classAVSRequestBuilder_a2aa434deae2d8ad4cc43b855c43d404a}} 
+void {\bfseries change\+Client} (\hyperlink{classNetwork_1_1HTTP2_1_1HTTP2Client}{H\+T\+T\+P2\+Client} $\ast$client)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAVSRequestBuilder_ae70a64a49dbef9eb3c01d5a56d68bfba}\label{classAVSRequestBuilder_ae70a64a49dbef9eb3c01d5a56d68bfba}} 
+void {\bfseries build\+Main\+Header} (const \hyperlink{classNetwork_1_1HTTP_1_1HTTP2Header}{H\+T\+T\+P2\+Header} $\ast$input, \hyperlink{structAVSHeaderData}{A\+V\+S\+Header\+Data} $\ast$ouput)
+\item 
+\mbox{\Hypertarget{classAVSRequestBuilder_a595c9a1f89f2ed0da5b6b2b4137183aa}\label{classAVSRequestBuilder_a595c9a1f89f2ed0da5b6b2b4137183aa}} 
+void {\bfseries build\+Multiplex\+Header} (const \hyperlink{classNetwork_1_1HTTP_1_1HTTP2Header}{H\+T\+T\+P2\+Header} $\ast$input, \hyperlink{structAVSHeaderData}{A\+V\+S\+Header\+Data} $\ast$output)
+\item 
+\mbox{\Hypertarget{classAVSRequestBuilder_a41d9b3cc515effb6aea81efa5f15fc1d}\label{classAVSRequestBuilder_a41d9b3cc515effb6aea81efa5f15fc1d}} 
+void {\bfseries build\+Body} (const \hyperlink{classNetwork_1_1HTTP_1_1HTTPHeader}{H\+T\+T\+P\+Header} $\ast$header\+\_\+input, const \hyperlink{classNetwork_1_1HTTP_1_1HTTPContent}{H\+T\+T\+P\+Content} $\ast$content\+\_\+input, \hyperlink{structAVSSourceData}{A\+V\+S\+Source\+Data} $\ast$output)
+\item 
+\mbox{\Hypertarget{classAVSRequestBuilder_a47e5a6f6feb90aa90b64b1b2b52ad8b2}\label{classAVSRequestBuilder_a47e5a6f6feb90aa90b64b1b2b52ad8b2}} 
+void {\bfseries build\+Multiplex\+Body} (const \hyperlink{structNetwork_1_1HTTP_1_1HTTPRequestMultipartContent}{H\+T\+T\+P\+Request\+Multipart\+Content} $\ast$content, size\+\_\+t audio\+\_\+len, \hyperlink{structAVSSourceData}{A\+V\+S\+Source\+Data} $\ast$output)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classAVSRequestBuilder}{A\+V\+S\+Request\+Builder} class. 
+
+Builder \& Invoker Class 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/mutzi/progs/linux\+\_\+workspace/alexa-\/avs-\/prototype/src/include/avsrequestbuilder.\+h\item 
+/home/mutzi/progs/linux\+\_\+workspace/alexa-\/avs-\/prototype/src/avsrequestbuilder.\+cpp\end{DoxyCompactItemize}

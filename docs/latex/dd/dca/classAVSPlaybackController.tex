@@ -1,0 +1,77 @@
+\hypertarget{classAVSPlaybackController}{}\section{A\+V\+S\+Playback\+Controller Class Reference}
+\label{classAVSPlaybackController}\index{A\+V\+S\+Playback\+Controller@{A\+V\+S\+Playback\+Controller}}
+Inheritance diagram for A\+V\+S\+Playback\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{dd/dca/classAVSPlaybackController}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAVSPlaybackController_adb98c7112a30f235cd147fe9ae06ef5d}\label{classAVSPlaybackController_adb98c7112a30f235cd147fe9ae06ef5d}} 
+{\bfseries A\+V\+S\+Playback\+Controller} (\hyperlink{classAVSClient}{A\+V\+S\+Client} $\ast$avs\+\_\+client)
+\item 
+\mbox{\Hypertarget{classAVSPlaybackController_aa8558bffc088fe6e432873e2e5b168f1}\label{classAVSPlaybackController_aa8558bffc088fe6e432873e2e5b168f1}} 
+void {\bfseries init\+Playback\+Thread} (void)
+\item 
+\mbox{\Hypertarget{classAVSPlaybackController_a0a26c091f4820d069c4ab1fc2c2d6b09}\label{classAVSPlaybackController_a0a26c091f4820d069c4ab1fc2c2d6b09}} 
+void {\bfseries push\+Playback\+Queue} (\hyperlink{structPlaybackQueue}{Playback\+Queue} queue)
+\item 
+\mbox{\Hypertarget{classAVSPlaybackController_a467b40ea41b996f257264aa949dbfd7b}\label{classAVSPlaybackController_a467b40ea41b996f257264aa949dbfd7b}} 
+void {\bfseries clear\+Playback\+Queue} (void)
+\item 
+\mbox{\Hypertarget{classAVSPlaybackController_acea50cfab83625c4b7b72b7259ebc789}\label{classAVSPlaybackController_acea50cfab83625c4b7b72b7259ebc789}} 
+void {\bfseries playmusic} (\hyperlink{structPlaybackQueue}{Playback\+Queue} queue)
+\item 
+\mbox{\Hypertarget{classAVSPlaybackController_aac5268872ae90e80ea0c053c412f7f9d}\label{classAVSPlaybackController_aac5268872ae90e80ea0c053c412f7f9d}} 
+void {\bfseries stopmusic} (void)
+\item 
+\mbox{\Hypertarget{classAVSPlaybackController_a2a4e4baed803290dc861ee9814f0d61b}\label{classAVSPlaybackController_a2a4e4baed803290dc861ee9814f0d61b}} 
+void {\bfseries pausemusic} (void)
+\item 
+\mbox{\Hypertarget{classAVSPlaybackController_a4c35f58551f460513812589b8baa0b78}\label{classAVSPlaybackController_a4c35f58551f460513812589b8baa0b78}} 
+void {\bfseries resumemusic} (void)
+\item 
+\mbox{\Hypertarget{classAVSPlaybackController_ab7033fe2d23261d7fb00afde067543ab}\label{classAVSPlaybackController_ab7033fe2d23261d7fb00afde067543ab}} 
+bool {\bfseries is\+Thread\+Running} (void)
+\item 
+\mbox{\Hypertarget{classAVSPlaybackController_acd40f730cd897677de1716cd82eeebad}\label{classAVSPlaybackController_acd40f730cd897677de1716cd82eeebad}} 
+bool {\bfseries is\+Playback\+Stopped} (void)
+\item 
+\mbox{\Hypertarget{classAVSPlaybackController_aa6aff2a0fcf8a2930810b70d4a032cfe}\label{classAVSPlaybackController_aa6aff2a0fcf8a2930810b70d4a032cfe}} 
+void {\bfseries set\+Playback\+Thread\+Waiting} (bool status)
+\item 
+\mbox{\Hypertarget{classAVSPlaybackController_afb04cbe2676018f76426894a1ce52e90}\label{classAVSPlaybackController_afb04cbe2676018f76426894a1ce52e90}} 
+void {\bfseries set\+Playback\+Running} (bool status)
+\item 
+\mbox{\Hypertarget{classAVSPlaybackController_a3c5d3634ab38a555881b934c52f8457b}\label{classAVSPlaybackController_a3c5d3634ab38a555881b934c52f8457b}} 
+\hyperlink{classAVSClient}{A\+V\+S\+Client} $\ast$ {\bfseries get\+A\+V\+S\+Client} (void)
+\item 
+\mbox{\Hypertarget{classAVSPlaybackController_a8a33a369f297511674e9077a1814d0a3}\label{classAVSPlaybackController_a8a33a369f297511674e9077a1814d0a3}} 
+void {\bfseries on\+Play\+Directive} (const \hyperlink{classNetwork_1_1HTTP_1_1HTTPClientDirectiveEvent}{H\+T\+T\+P\+Client\+Directive\+Event} $\ast$event)
+\item 
+\mbox{\Hypertarget{classAVSPlaybackController_ab2f511937bf5b2352878e6f9bdc4588b}\label{classAVSPlaybackController_ab2f511937bf5b2352878e6f9bdc4588b}} 
+void {\bfseries on\+Stop\+Directive} (const \hyperlink{classNetwork_1_1HTTP_1_1HTTPClientDirectiveEvent}{H\+T\+T\+P\+Client\+Directive\+Event} $\ast$event)
+\item 
+\mbox{\Hypertarget{classAVSPlaybackController_a951cfdf2c8b4143b81399d9a6b6cccb7}\label{classAVSPlaybackController_a951cfdf2c8b4143b81399d9a6b6cccb7}} 
+void {\bfseries on\+Clear\+Queue\+Directive} (const \hyperlink{classNetwork_1_1HTTP_1_1HTTPClientDirectiveEvent}{H\+T\+T\+P\+Client\+Directive\+Event} $\ast$event)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAVSPlaybackController_af80bfc9964761eab96ebaf5027c9a193}\label{classAVSPlaybackController_af80bfc9964761eab96ebaf5027c9a193}} 
+void {\bfseries on\+Playback\+Thread\+Process} (void)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAVSPlaybackController_a4faf15973cba9a358ecf4ecf70cac983}\label{classAVSPlaybackController_a4faf15973cba9a358ecf4ecf70cac983}} 
+static void {\bfseries playback\+\_\+thread} (\hyperlink{classAVSPlaybackController}{A\+V\+S\+Playback\+Controller} $\ast$controller)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/mutzi/progs/linux\+\_\+workspace/alexa-\/avs-\/prototype/src/include/avsplaybackcontroller.\+h\item 
+/home/mutzi/progs/linux\+\_\+workspace/alexa-\/avs-\/prototype/src/avsplaybackcontroller.\+cpp\end{DoxyCompactItemize}

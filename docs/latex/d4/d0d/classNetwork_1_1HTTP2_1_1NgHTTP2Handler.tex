@@ -1,0 +1,166 @@
+\hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2Handler}{}\section{Network\+:\+:H\+T\+T\+P2\+:\+:Ng\+H\+T\+T\+P2\+Handler Class Reference}
+\label{classNetwork_1_1HTTP2_1_1NgHTTP2Handler}\index{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+Handler@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+Handler}}
+Inheritance diagram for Network\+:\+:H\+T\+T\+P2\+:\+:Ng\+H\+T\+T\+P2\+Handler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d4/d0d/classNetwork_1_1HTTP2_1_1NgHTTP2Handler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classNetwork_1_1HTTP2_1_1NgHTTP2Handler_a8fda32f531a6a3946dc861b06c519c95}{initialize} (\hyperlink{structNetwork_1_1HTTP2_1_1HTTP2HandlerResponse}{H\+T\+T\+P2\+Handler\+Response} $\ast$response, \hyperlink{classNetwork_1_1HTTP2_1_1NgHTTP2ResponseManager}{Ng\+H\+T\+T\+P2\+Response\+Manager} $\ast$manager)  throw (std\+::exception)
+\begin{DoxyCompactList}\small\item\em Initialize. \end{DoxyCompactList}\item 
+void \hyperlink{classNetwork_1_1HTTP2_1_1NgHTTP2Handler_a2384e4c12557cd181915dd33775b8a1a}{set\+Uri} (const char $\ast$uri)  throw ( std\+::exception )
+\begin{DoxyCompactList}\small\item\em set\+Uri \end{DoxyCompactList}\item 
+void \hyperlink{classNetwork_1_1HTTP2_1_1NgHTTP2Handler_af86bb397ae186757cd84d74954471e43}{set\+Port} (uint16\+\_\+t port)  throw ( std\+::exception )
+\begin{DoxyCompactList}\small\item\em set\+Port \end{DoxyCompactList}\item 
+void \hyperlink{classNetwork_1_1HTTP2_1_1NgHTTP2Handler_add84d25ff765f24e971b1c3177ef17a8}{set\+Response\+Manager} (\hyperlink{classNetwork_1_1HTTP2_1_1NgHTTP2ResponseManager}{Ng\+H\+T\+T\+P2\+Response\+Manager} $\ast$response\+\_\+manager)
+\begin{DoxyCompactList}\small\item\em set\+Response\+Manager \end{DoxyCompactList}\item 
+void \hyperlink{classNetwork_1_1HTTP2_1_1NgHTTP2Handler_a71d2ba66b9296604b81c440d1c54f670}{set\+Request\+Header} (nghttp2\+\_\+nv $\ast$ptr, size\+\_\+t size)  throw ( std\+::exception )
+\begin{DoxyCompactList}\small\item\em set\+Header \end{DoxyCompactList}\item 
+void \hyperlink{classNetwork_1_1HTTP2_1_1NgHTTP2Handler_acfa6474084f1a11dd9026ea8078d6b96}{set\+Request\+Source} (const std\+::string source)  throw ( std\+::exception )
+\begin{DoxyCompactList}\small\item\em set\+Request\+Multipart \end{DoxyCompactList}\item 
+void \hyperlink{classNetwork_1_1HTTP2_1_1NgHTTP2Handler_a0ffcd7addf3ea2dc9467312e3a45efff}{perform} (void)  throw ( std\+::exception )
+\begin{DoxyCompactList}\small\item\em perform \end{DoxyCompactList}\item 
+void \hyperlink{classNetwork_1_1HTTP2_1_1NgHTTP2Handler_a9ab6663ad62320d8588733aa9f467ace}{clean\+Up} (void)  throw (std\+::exception )
+\begin{DoxyCompactList}\small\item\em Clean\+Up. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2Handler_ae42b5d3aca9bc746770bb73af2a0f727}\label{classNetwork_1_1HTTP2_1_1NgHTTP2Handler_ae42b5d3aca9bc746770bb73af2a0f727}} 
+static void {\bfseries on\+Response\+Header\+Event} (const void $\ast$name, size\+\_\+t name\+\_\+size, const void $\ast$value, size\+\_\+t value\+\_\+size, void $\ast$userdata)
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2Handler_acbed6056981ee0302bd24c86d1985319}\label{classNetwork_1_1HTTP2_1_1NgHTTP2Handler_acbed6056981ee0302bd24c86d1985319}} 
+static void {\bfseries on\+Response\+Body\+Event} (void $\ast$content, size\+\_\+t size, void $\ast$userdata)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2Handler_a9029be1f977fe05fa61e6c594682bf87}\label{classNetwork_1_1HTTP2_1_1NgHTTP2Handler_a9029be1f977fe05fa61e6c594682bf87}} 
+\hyperlink{structNetwork_1_1HTTP2_1_1HTTP2HandlerSession}{H\+T\+T\+P2\+Handler\+Session} $\ast$ {\bfseries m\+\_\+session}
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2Handler_ab7de10d19b7ea978b7e55ecc6a0edc32}\label{classNetwork_1_1HTTP2_1_1NgHTTP2Handler_ab7de10d19b7ea978b7e55ecc6a0edc32}} 
+\hyperlink{structNetwork_1_1HTTP2_1_1HTTP2HandlerResponse}{H\+T\+T\+P2\+Handler\+Response} $\ast$ {\bfseries m\+\_\+session\+\_\+response}
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2Handler_a2cf599837cab36282fe43974cbc0083a}\label{classNetwork_1_1HTTP2_1_1NgHTTP2Handler_a2cf599837cab36282fe43974cbc0083a}} 
+\hyperlink{structNetwork_1_1HTTP2_1_1HTTP2HandlerResponseManagement}{H\+T\+T\+P2\+Handler\+Response\+Management} $\ast$ {\bfseries m\+\_\+session\+\_\+response\+\_\+management}
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2Handler_addf66405fdf0ed01d607bf43e559d31e}\label{classNetwork_1_1HTTP2_1_1NgHTTP2Handler_addf66405fdf0ed01d607bf43e559d31e}} 
+\hyperlink{classNetwork_1_1HTTP2_1_1NgHTTP2ResponseManager}{Ng\+H\+T\+T\+P2\+Response\+Manager} $\ast$ {\bfseries m\+\_\+response\+\_\+manager}
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2Handler_a4b5d20e7eb960eb4e277cd1a07e2e9a3}\label{classNetwork_1_1HTTP2_1_1NgHTTP2Handler_a4b5d20e7eb960eb4e277cd1a07e2e9a3}} 
+nghttp2\+\_\+nv $\ast$ {\bfseries m\+\_\+header\+\_\+copy}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2Handler_a9ab6663ad62320d8588733aa9f467ace}\label{classNetwork_1_1HTTP2_1_1NgHTTP2Handler_a9ab6663ad62320d8588733aa9f467ace}} 
+\index{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+Handler@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+Handler}!clean\+Up@{clean\+Up}}
+\index{clean\+Up@{clean\+Up}!Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+Handler@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+Handler}}
+\subsubsection{\texorpdfstring{clean\+Up()}{cleanUp()}}
+{\footnotesize\ttfamily void Ng\+H\+T\+T\+P2\+Handler\+::clean\+Up (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) throw  std\+::exception) }
+
+
+
+Clean\+Up. 
+
+destroy http2 session \mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2Handler_a8fda32f531a6a3946dc861b06c519c95}\label{classNetwork_1_1HTTP2_1_1NgHTTP2Handler_a8fda32f531a6a3946dc861b06c519c95}} 
+\index{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+Handler@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+Handler}!initialize@{initialize}}
+\index{initialize@{initialize}!Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+Handler@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+Handler}}
+\subsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily void Ng\+H\+T\+T\+P2\+Handler\+::initialize (\begin{DoxyParamCaption}\item[{\hyperlink{structNetwork_1_1HTTP2_1_1HTTP2HandlerResponse}{H\+T\+T\+P2\+Handler\+Response} $\ast$}]{response,  }\item[{\hyperlink{classNetwork_1_1HTTP2_1_1NgHTTP2ResponseManager}{Ng\+H\+T\+T\+P2\+Response\+Manager} $\ast$}]{manager }\end{DoxyParamCaption}) throw  std\+::exception) }
+
+
+
+Initialize. 
+
+init http2 session \mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2Handler_a0ffcd7addf3ea2dc9467312e3a45efff}\label{classNetwork_1_1HTTP2_1_1NgHTTP2Handler_a0ffcd7addf3ea2dc9467312e3a45efff}} 
+\index{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+Handler@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+Handler}!perform@{perform}}
+\index{perform@{perform}!Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+Handler@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+Handler}}
+\subsubsection{\texorpdfstring{perform()}{perform()}}
+{\footnotesize\ttfamily void Ng\+H\+T\+T\+P2\+Handler\+::perform (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) throw  std\+::exception) }
+
+
+
+perform 
+
+send data to server \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2Handler_af86bb397ae186757cd84d74954471e43}\label{classNetwork_1_1HTTP2_1_1NgHTTP2Handler_af86bb397ae186757cd84d74954471e43}} 
+\index{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+Handler@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+Handler}!set\+Port@{set\+Port}}
+\index{set\+Port@{set\+Port}!Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+Handler@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+Handler}}
+\subsubsection{\texorpdfstring{set\+Port()}{setPort()}}
+{\footnotesize\ttfamily void Ng\+H\+T\+T\+P2\+Handler\+::set\+Port (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{port }\end{DoxyParamCaption}) throw  std\+::exception) }
+
+
+
+set\+Port 
+
+Set Server Port 
+\begin{DoxyParams}{Parameters}
+{\em port} & Default\+: 443 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2Handler_a71d2ba66b9296604b81c440d1c54f670}\label{classNetwork_1_1HTTP2_1_1NgHTTP2Handler_a71d2ba66b9296604b81c440d1c54f670}} 
+\index{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+Handler@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+Handler}!set\+Request\+Header@{set\+Request\+Header}}
+\index{set\+Request\+Header@{set\+Request\+Header}!Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+Handler@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+Handler}}
+\subsubsection{\texorpdfstring{set\+Request\+Header()}{setRequestHeader()}}
+{\footnotesize\ttfamily void Ng\+H\+T\+T\+P2\+Handler\+::set\+Request\+Header (\begin{DoxyParamCaption}\item[{nghttp2\+\_\+nv $\ast$}]{ptr,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption}) throw  std\+::exception) }
+
+
+
+set\+Header 
+
+Set H\+T\+T\+P2 Request Header \mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2Handler_acfa6474084f1a11dd9026ea8078d6b96}\label{classNetwork_1_1HTTP2_1_1NgHTTP2Handler_acfa6474084f1a11dd9026ea8078d6b96}} 
+\index{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+Handler@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+Handler}!set\+Request\+Source@{set\+Request\+Source}}
+\index{set\+Request\+Source@{set\+Request\+Source}!Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+Handler@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+Handler}}
+\subsubsection{\texorpdfstring{set\+Request\+Source()}{setRequestSource()}}
+{\footnotesize\ttfamily void Ng\+H\+T\+T\+P2\+Handler\+::set\+Request\+Source (\begin{DoxyParamCaption}\item[{const std\+::string}]{source }\end{DoxyParamCaption}) throw  std\+::exception) }
+
+
+
+set\+Request\+Multipart 
+
+Set H\+T\+T\+P2 Request Body Content 
+\begin{DoxyParams}{Parameters}
+{\em fd} & \+: File\+Descriptor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2Handler_add84d25ff765f24e971b1c3177ef17a8}\label{classNetwork_1_1HTTP2_1_1NgHTTP2Handler_add84d25ff765f24e971b1c3177ef17a8}} 
+\index{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+Handler@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+Handler}!set\+Response\+Manager@{set\+Response\+Manager}}
+\index{set\+Response\+Manager@{set\+Response\+Manager}!Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+Handler@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+Handler}}
+\subsubsection{\texorpdfstring{set\+Response\+Manager()}{setResponseManager()}}
+{\footnotesize\ttfamily void Ng\+H\+T\+T\+P2\+Handler\+::set\+Response\+Manager (\begin{DoxyParamCaption}\item[{\hyperlink{classNetwork_1_1HTTP2_1_1NgHTTP2ResponseManager}{Ng\+H\+T\+T\+P2\+Response\+Manager} $\ast$}]{response\+\_\+manager }\end{DoxyParamCaption})}
+
+
+
+set\+Response\+Manager 
+
+
+\begin{DoxyParams}{Parameters}
+{\em response\+\_\+manager} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1NgHTTP2Handler_a2384e4c12557cd181915dd33775b8a1a}\label{classNetwork_1_1HTTP2_1_1NgHTTP2Handler_a2384e4c12557cd181915dd33775b8a1a}} 
+\index{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+Handler@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+Handler}!set\+Uri@{set\+Uri}}
+\index{set\+Uri@{set\+Uri}!Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+Handler@{Network\+::\+H\+T\+T\+P2\+::\+Ng\+H\+T\+T\+P2\+Handler}}
+\subsubsection{\texorpdfstring{set\+Uri()}{setUri()}}
+{\footnotesize\ttfamily void Ng\+H\+T\+T\+P2\+Handler\+::set\+Uri (\begin{DoxyParamCaption}\item[{const char $\ast$}]{uri }\end{DoxyParamCaption}) throw  std\+::exception) }
+
+
+
+set\+Uri 
+
+Set U\+RI \+: \href{https://example.de}{\tt https\+://example.\+de} without https only example.\+de 
+\begin{DoxyParams}{Parameters}
+{\em uri} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/mutzi/progs/linux\+\_\+workspace/alexa-\/avs-\/prototype/src/include/nghttp2handler.\+h\item 
+/home/mutzi/progs/linux\+\_\+workspace/alexa-\/avs-\/prototype/src/nghttp2handler.\+cpp\end{DoxyCompactItemize}

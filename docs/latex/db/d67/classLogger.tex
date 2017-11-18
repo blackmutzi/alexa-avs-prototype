@@ -1,0 +1,100 @@
+\hypertarget{classLogger}{}\section{Logger Class Reference}
+\label{classLogger}\index{Logger@{Logger}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classLogger_1_1Cleanup}{Cleanup}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classLogger_a2e4b4c867ecfe260bc1f4d218806810c}\label{classLogger_a2e4b4c867ecfe260bc1f4d218806810c}} 
+void {\bfseries log} (const std\+::string \&in\+Log\+Level, const std\+::string \&in\+Message)
+\item 
+\mbox{\Hypertarget{classLogger_a5cde5c21cb6934b132eaf8261b53e402}\label{classLogger_a5cde5c21cb6934b132eaf8261b53e402}} 
+void {\bfseries info} (const std\+::string \&in\+Message)
+\item 
+\mbox{\Hypertarget{classLogger_a7cc462a7598d311aa4f2ec4fe518b93f}\label{classLogger_a7cc462a7598d311aa4f2ec4fe518b93f}} 
+void {\bfseries info} (const std\+::string \&in\+Message, const std\+::string \&extend\+Message)
+\item 
+\mbox{\Hypertarget{classLogger_ac4e95734a63d169fcef24210f559693a}\label{classLogger_ac4e95734a63d169fcef24210f559693a}} 
+void {\bfseries info} (const std\+::string \&in\+Message, int integer)
+\item 
+\mbox{\Hypertarget{classLogger_ad1933a0621041f405973dded2410cbc0}\label{classLogger_ad1933a0621041f405973dded2410cbc0}} 
+void {\bfseries warn} (const std\+::string \&in\+Message)
+\item 
+\mbox{\Hypertarget{classLogger_ae533d83005cf0a3d7f51a16840fc018a}\label{classLogger_ae533d83005cf0a3d7f51a16840fc018a}} 
+void {\bfseries warn} (\hyperlink{structErrorException}{Error\+Exception} e)
+\item 
+\mbox{\Hypertarget{classLogger_aeb984c2ca90a8aca582e647b249733e7}\label{classLogger_aeb984c2ca90a8aca582e647b249733e7}} 
+void {\bfseries warn} (const std\+::string \&in\+Message, \hyperlink{structErrorException}{Error\+Exception} e)
+\item 
+\mbox{\Hypertarget{classLogger_a32a06234fc70ea5fb75f32b26cea4483}\label{classLogger_a32a06234fc70ea5fb75f32b26cea4483}} 
+void {\bfseries debug} (const std\+::string \&in\+Message)
+\item 
+\mbox{\Hypertarget{classLogger_a0cd03a1667644704c93c30c52176a87c}\label{classLogger_a0cd03a1667644704c93c30c52176a87c}} 
+void {\bfseries error} (const std\+::string \&in\+Message)
+\item 
+\mbox{\Hypertarget{classLogger_a0e554d398ab4ed57a651dceca352ddd3}\label{classLogger_a0e554d398ab4ed57a651dceca352ddd3}} 
+void {\bfseries error} (\hyperlink{structErrorException}{Error\+Exception} e)
+\item 
+\mbox{\Hypertarget{classLogger_a6f80f9061863ffe36007bc661e6d9f45}\label{classLogger_a6f80f9061863ffe36007bc661e6d9f45}} 
+void {\bfseries error} (const std\+::string \&in\+Message, \hyperlink{structErrorException}{Error\+Exception} e)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classLogger_a4aa4d7c3b98f6e12e7ea8253da5ea0cd}\label{classLogger_a4aa4d7c3b98f6e12e7ea8253da5ea0cd}} 
+static \hyperlink{classLogger}{Logger} \& {\bfseries instance} ()
+\item 
+\mbox{\Hypertarget{classLogger_a192b4230e191b7f6d38c50d8d20d3c9d}\label{classLogger_a192b4230e191b7f6d38c50d8d20d3c9d}} 
+static \hyperlink{classLogger}{Logger} \& {\bfseries instance} (const std\+::string \&class\+\_\+name)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classLogger_a13508ec720a1c2f885793ea84befc58e}\label{classLogger_a13508ec720a1c2f885793ea84befc58e}} 
+static const std\+::string {\bfseries k\+Log\+Level\+Debug} = \char`\"{}D\+E\+B\+UG\char`\"{}
+\item 
+\mbox{\Hypertarget{classLogger_a8e72302e1254e7f840cfc1cbd9cbd615}\label{classLogger_a8e72302e1254e7f840cfc1cbd9cbd615}} 
+static const std\+::string {\bfseries k\+Log\+Level\+Info} = \char`\"{}I\+N\+FO\char`\"{}
+\item 
+\mbox{\Hypertarget{classLogger_a8e4174e48cfc36ad766e26d0a16cd5cd}\label{classLogger_a8e4174e48cfc36ad766e26d0a16cd5cd}} 
+static const std\+::string {\bfseries k\+Log\+Level\+Warning} = \char`\"{}W\+A\+R\+N\+I\+NG\char`\"{}
+\item 
+\mbox{\Hypertarget{classLogger_a848ce96cde882ab0709ee26bbd22a5cf}\label{classLogger_a848ce96cde882ab0709ee26bbd22a5cf}} 
+static const std\+::string {\bfseries k\+Log\+Level\+Error} = \char`\"{}E\+R\+R\+OR\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classLogger_a95312ad188bc0ffaae6e81e7232fea56}\label{classLogger_a95312ad188bc0ffaae6e81e7232fea56}} 
+void {\bfseries log\+Helper} (const std\+::string \&in\+Log\+Level, const std\+::string \&in\+Message)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classLogger_a9cba5476c807435980221f095ba336ad}\label{classLogger_a9cba5476c807435980221f095ba336ad}} 
+std\+::ofstream {\bfseries m\+\_\+output\+\_\+stream}
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classLogger_aa2b461b4d0dc897500899b57cc446ead}\label{classLogger_aa2b461b4d0dc897500899b57cc446ead}} 
+static \hyperlink{classLogger}{Logger} $\ast$ {\bfseries p\+Instance} = nullptr
+\item 
+\mbox{\Hypertarget{classLogger_a5d70bcbb122d00ecc958df45439b96f3}\label{classLogger_a5d70bcbb122d00ecc958df45439b96f3}} 
+static const char $\ast$const {\bfseries k\+Log\+File\+Name} = \char`\"{}application.\+log\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classLogger_ac3dfceef1470d020a70636b08149121a}\label{classLogger_ac3dfceef1470d020a70636b08149121a}} 
+class {\bfseries Cleanup}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/mutzi/progs/linux\+\_\+workspace/alexa-\/avs-\/prototype/src/include/logger.\+h\item 
+/home/mutzi/progs/linux\+\_\+workspace/alexa-\/avs-\/prototype/src/logger.\+cpp\end{DoxyCompactItemize}

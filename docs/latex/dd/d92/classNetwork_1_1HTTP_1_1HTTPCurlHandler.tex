@@ -1,0 +1,47 @@
+\hypertarget{classNetwork_1_1HTTP_1_1HTTPCurlHandler}{}\section{Network\+:\+:H\+T\+TP\+:\+:H\+T\+T\+P\+Curl\+Handler Class Reference}
+\label{classNetwork_1_1HTTP_1_1HTTPCurlHandler}\index{Network\+::\+H\+T\+T\+P\+::\+H\+T\+T\+P\+Curl\+Handler@{Network\+::\+H\+T\+T\+P\+::\+H\+T\+T\+P\+Curl\+Handler}}
+Inheritance diagram for Network\+:\+:H\+T\+TP\+:\+:H\+T\+T\+P\+Curl\+Handler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{dd/d92/classNetwork_1_1HTTP_1_1HTTPCurlHandler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP_1_1HTTPCurlHandler_a92de1090a6631a63369f956387d0627a}\label{classNetwork_1_1HTTP_1_1HTTPCurlHandler_a92de1090a6631a63369f956387d0627a}} 
+virtual void {\bfseries init} ()
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP_1_1HTTPCurlHandler_a8a8acaf3560d2b0ecf5b2533a749e465}\label{classNetwork_1_1HTTP_1_1HTTPCurlHandler_a8a8acaf3560d2b0ecf5b2533a749e465}} 
+void {\bfseries set\+Response\+Callback} (\hyperlink{structNetwork_1_1HTTP_1_1HTTPResponseMemory}{H\+T\+T\+P\+Response\+Memory} $\ast$chunk)  throw (std\+::exception )
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP_1_1HTTPCurlHandler_a09626294d8ba90d5d365200c44dda471}\label{classNetwork_1_1HTTP_1_1HTTPCurlHandler_a09626294d8ba90d5d365200c44dda471}} 
+C\+U\+RL $\ast$ {\bfseries get\+Handle} (void)
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP_1_1HTTPCurlHandler_a4fcf7e210a14f48aca958e295a2055dd}\label{classNetwork_1_1HTTP_1_1HTTPCurlHandler_a4fcf7e210a14f48aca958e295a2055dd}} 
+virtual void {\bfseries do\+It} (void)  throw ( std\+::exception )
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP_1_1HTTPCurlHandler_aa6ad1edac5930e5161d6154c8b812e3f}\label{classNetwork_1_1HTTP_1_1HTTPCurlHandler_aa6ad1edac5930e5161d6154c8b812e3f}} 
+virtual void {\bfseries clean} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP_1_1HTTPCurlHandler_a1d4b5817614cf5e07e7da42cb9f6ab3e}\label{classNetwork_1_1HTTP_1_1HTTPCurlHandler_a1d4b5817614cf5e07e7da42cb9f6ab3e}} 
+static size\+\_\+t {\bfseries Write\+Memory\+Callback} (void $\ast$contents, size\+\_\+t size, size\+\_\+t nmemb, void $\ast$userp)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP_1_1HTTPCurlHandler_a87da1d90cd40c6ed90e97fd74698a6b4}\label{classNetwork_1_1HTTP_1_1HTTPCurlHandler_a87da1d90cd40c6ed90e97fd74698a6b4}} 
+C\+U\+RL $\ast$ {\bfseries m\+\_\+curl\+\_\+handle}
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP_1_1HTTPCurlHandler_a338d584b47b509d09059ed64bb79b7af}\label{classNetwork_1_1HTTP_1_1HTTPCurlHandler_a338d584b47b509d09059ed64bb79b7af}} 
+\hyperlink{structNetwork_1_1HTTP_1_1HTTPResponseMemory}{H\+T\+T\+P\+Response\+Memory} $\ast$ {\bfseries m\+\_\+response\+\_\+content}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/mutzi/progs/linux\+\_\+workspace/alexa-\/avs-\/prototype/src/include/httpcurlhandler.\+h\item 
+/home/mutzi/progs/linux\+\_\+workspace/alexa-\/avs-\/prototype/src/httpcurlhandler.\+cpp\end{DoxyCompactItemize}

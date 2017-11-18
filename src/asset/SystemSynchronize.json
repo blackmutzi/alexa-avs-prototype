@@ -1,0 +1,18 @@
+{
+    "context": [
+        {{Alerts.AlertsState}},
+        {{AudioPlayer.PlaybackState}},        
+        {{Speaker.VolumeState}},
+        {{SpeechSynthesizer.SpeechState}},
+        {{SpeechRecognizer.RecognizerState}}
+    ],   
+    "event": {
+        "header": {
+            "namespace": "System",
+            "name": "SynchronizeState",
+            "messageId": "{{MESSAGE_ID_STRING}}"
+        },
+        "payload": {
+        }
+    }
+}

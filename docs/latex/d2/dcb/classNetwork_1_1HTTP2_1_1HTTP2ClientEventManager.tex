@@ -1,0 +1,80 @@
+\hypertarget{classNetwork_1_1HTTP2_1_1HTTP2ClientEventManager}{}\section{Network\+:\+:H\+T\+T\+P2\+:\+:H\+T\+T\+P2\+Client\+Event\+Manager Class Reference}
+\label{classNetwork_1_1HTTP2_1_1HTTP2ClientEventManager}\index{Network\+::\+H\+T\+T\+P2\+::\+H\+T\+T\+P2\+Client\+Event\+Manager@{Network\+::\+H\+T\+T\+P2\+::\+H\+T\+T\+P2\+Client\+Event\+Manager}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1HTTP2ClientEventManager_a2fa38d058afbe4f01c86703df523e702}\label{classNetwork_1_1HTTP2_1_1HTTP2ClientEventManager_a2fa38d058afbe4f01c86703df523e702}} 
+void {\bfseries register\+Directiven\+Listener} (\hyperlink{classNetwork_1_1HTTP_1_1DirectivenListener}{Directiven\+Listener} $\ast$listener)
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1HTTP2ClientEventManager_a7c619296724ac41e95769239aa2cb50f}\label{classNetwork_1_1HTTP2_1_1HTTP2ClientEventManager_a7c619296724ac41e95769239aa2cb50f}} 
+void {\bfseries unregister\+Directiven\+Listener} (\hyperlink{classNetwork_1_1HTTP_1_1DirectivenListener}{Directiven\+Listener} $\ast$listener)
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1HTTP2ClientEventManager_afc79100de7cc9d8e4f5712b57b605f90}\label{classNetwork_1_1HTTP2_1_1HTTP2ClientEventManager_afc79100de7cc9d8e4f5712b57b605f90}} 
+void {\bfseries register\+Audio\+Directiven\+Listener} (\hyperlink{classNetwork_1_1HTTP_1_1AudioPlayerDirectivenListener}{Audio\+Player\+Directiven\+Listener} $\ast$listener)
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1HTTP2ClientEventManager_ab42d414c770b66f56b47abfcd5f5428c}\label{classNetwork_1_1HTTP2_1_1HTTP2ClientEventManager_ab42d414c770b66f56b47abfcd5f5428c}} 
+void {\bfseries unregister\+Audio\+Directiven\+Listener} (\hyperlink{classNetwork_1_1HTTP_1_1AudioPlayerDirectivenListener}{Audio\+Player\+Directiven\+Listener} $\ast$listener)
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1HTTP2ClientEventManager_ab0dcc078f1500f69903d9956ec50cf20}\label{classNetwork_1_1HTTP2_1_1HTTP2ClientEventManager_ab0dcc078f1500f69903d9956ec50cf20}} 
+virtual void {\bfseries invoke\+All\+Events} (\hyperlink{classNetwork_1_1HTTP_1_1HTTPResponse}{H\+T\+T\+P\+Response} $\ast$response)
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1HTTP2ClientEventManager_ab5bdbbcdd686b974a61e1ca0a045570f}\label{classNetwork_1_1HTTP2_1_1HTTP2ClientEventManager_ab5bdbbcdd686b974a61e1ca0a045570f}} 
+void {\bfseries set\+Down\+Channel\+Status} (bool status)
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1HTTP2ClientEventManager_ada68eb3ae12bb259540cad78ac455d1f}\label{classNetwork_1_1HTTP2_1_1HTTP2ClientEventManager_ada68eb3ae12bb259540cad78ac455d1f}} 
+int $\ast$ {\bfseries get\+Stream\+Status} (void)
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1HTTP2ClientEventManager_a30df0cab5c3fc8c0dbb090b51ef0afb8}\label{classNetwork_1_1HTTP2_1_1HTTP2ClientEventManager_a30df0cab5c3fc8c0dbb090b51ef0afb8}} 
+void {\bfseries set\+Boundary} (std\+::string boundary)
+\item 
+bool \hyperlink{classNetwork_1_1HTTP2_1_1HTTP2ClientEventManager_ac7ae33977250bde85715967dc52ae1cf}{get\+Down\+Channel\+Status} (void)
+\begin{DoxyCompactList}\small\item\em get\+Down\+Channel\+Status \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1HTTP2ClientEventManager_ad9625a75a8e37ef43af1e22ac6d372bc}\label{classNetwork_1_1HTTP2_1_1HTTP2ClientEventManager_ad9625a75a8e37ef43af1e22ac6d372bc}} 
+void {\bfseries invoke\+Recognize\+Event} (H\+T\+T\+P\+Client\+Recognize\+Directive $\ast$listener, \hyperlink{classNetwork_1_1HTTP_1_1HTTPClientDirectiveEvent}{H\+T\+T\+P\+Client\+Directive\+Event} $\ast$event)
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1HTTP2ClientEventManager_a6becf5f240cc72e4df027badd4fa48bd}\label{classNetwork_1_1HTTP2_1_1HTTP2ClientEventManager_a6becf5f240cc72e4df027badd4fa48bd}} 
+\hyperlink{classNetwork_1_1HTTP_1_1HTTPClientDirectiveEvent}{H\+T\+T\+P\+Client\+Directive\+Event} $\ast$ {\bfseries http\+\_\+response\+\_\+analyse} (\hyperlink{classNetwork_1_1HTTP_1_1HTTPResponse}{H\+T\+T\+P\+Response} $\ast$response)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1HTTP2ClientEventManager_a87be06424810bab439666bca577a1d95}\label{classNetwork_1_1HTTP2_1_1HTTP2ClientEventManager_a87be06424810bab439666bca577a1d95}} 
+Directiven\+Listener\+List {\bfseries m\+\_\+directiven\+\_\+listener\+\_\+list}
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1HTTP2ClientEventManager_ad8a290cb2755a2ab022eb44668f4a213}\label{classNetwork_1_1HTTP2_1_1HTTP2ClientEventManager_ad8a290cb2755a2ab022eb44668f4a213}} 
+Audio\+Directiven\+List {\bfseries m\+\_\+audio\+\_\+directiven\+\_\+listener\+\_\+list}
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1HTTP2ClientEventManager_a3c2106e0009d998c89f53e4ea2576927}\label{classNetwork_1_1HTTP2_1_1HTTP2ClientEventManager_a3c2106e0009d998c89f53e4ea2576927}} 
+int $\ast$ {\bfseries m\+\_\+stream\+\_\+status}
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1HTTP2ClientEventManager_af2b8875e7c125c0f0c1682aa6b733b32}\label{classNetwork_1_1HTTP2_1_1HTTP2ClientEventManager_af2b8875e7c125c0f0c1682aa6b733b32}} 
+bool {\bfseries m\+\_\+downchannel\+\_\+status}
+\item 
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1HTTP2ClientEventManager_a9ede54148c4aa343e5cdfaef8f85991f}\label{classNetwork_1_1HTTP2_1_1HTTP2ClientEventManager_a9ede54148c4aa343e5cdfaef8f85991f}} 
+std\+::string {\bfseries m\+\_\+boundary}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classNetwork_1_1HTTP2_1_1HTTP2ClientEventManager_ac7ae33977250bde85715967dc52ae1cf}\label{classNetwork_1_1HTTP2_1_1HTTP2ClientEventManager_ac7ae33977250bde85715967dc52ae1cf}} 
+\index{Network\+::\+H\+T\+T\+P2\+::\+H\+T\+T\+P2\+Client\+Event\+Manager@{Network\+::\+H\+T\+T\+P2\+::\+H\+T\+T\+P2\+Client\+Event\+Manager}!get\+Down\+Channel\+Status@{get\+Down\+Channel\+Status}}
+\index{get\+Down\+Channel\+Status@{get\+Down\+Channel\+Status}!Network\+::\+H\+T\+T\+P2\+::\+H\+T\+T\+P2\+Client\+Event\+Manager@{Network\+::\+H\+T\+T\+P2\+::\+H\+T\+T\+P2\+Client\+Event\+Manager}}
+\subsubsection{\texorpdfstring{get\+Down\+Channel\+Status()}{getDownChannelStatus()}}
+{\footnotesize\ttfamily bool H\+T\+T\+P2\+Client\+Event\+Manager\+::get\+Down\+Channel\+Status (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+get\+Down\+Channel\+Status 
+
+\begin{DoxyReturn}{Returns}
+if true downchannel is up if false downchannel is down 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/mutzi/progs/linux\+\_\+workspace/alexa-\/avs-\/prototype/src/include/http2clienteventmanager.\+h\item 
+/home/mutzi/progs/linux\+\_\+workspace/alexa-\/avs-\/prototype/src/http2clienteventmanager.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,52 @@
+\hypertarget{classWakeWord_1_1WakeWordIPC}{}\section{Wake\+Word\+:\+:Wake\+Word\+I\+PC Class Reference}
+\label{classWakeWord_1_1WakeWordIPC}\index{Wake\+Word\+::\+Wake\+Word\+I\+PC@{Wake\+Word\+::\+Wake\+Word\+I\+PC}}
+Inheritance diagram for Wake\+Word\+:\+:Wake\+Word\+I\+PC\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{df/d0a/classWakeWord_1_1WakeWordIPC}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classWakeWord_1_1WakeWordIPC_ab11612d88ce76a24d25dcc3c9def7bec}\label{classWakeWord_1_1WakeWordIPC_ab11612d88ce76a24d25dcc3c9def7bec}} 
+enum {\bfseries I\+P\+C\+Command} \+: unsigned int \{ \newline
+{\bfseries I\+P\+C\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+CT} = 1, 
+{\bfseries I\+P\+C\+\_\+\+W\+A\+K\+E\+\_\+\+W\+O\+R\+D\+\_\+\+D\+E\+T\+E\+C\+T\+ED} = 2, 
+{\bfseries I\+P\+C\+\_\+\+P\+A\+U\+S\+E\+\_\+\+W\+A\+K\+E\+\_\+\+W\+O\+R\+D\+\_\+\+E\+N\+G\+I\+NE} = 3, 
+{\bfseries I\+P\+C\+\_\+\+R\+E\+S\+U\+M\+E\+\_\+\+W\+A\+K\+E\+\_\+\+W\+O\+R\+D\+\_\+\+E\+N\+G\+I\+NE} = 4, 
+\newline
+{\bfseries I\+P\+C\+\_\+\+C\+O\+N\+F\+I\+RM} = 5, 
+{\bfseries U\+N\+K\+N\+O\+WN} = 6
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classWakeWord_1_1WakeWordIPC_a7ed1b605b26a0b1428eec707eccda117}\label{classWakeWord_1_1WakeWordIPC_a7ed1b605b26a0b1428eec707eccda117}} 
+{\bfseries Wake\+Word\+I\+PC} (\hyperlink{classWakeWord_1_1WakeWordDetectedHandler}{Wake\+Word\+Detected\+Handler} $\ast$handler)
+\item 
+\mbox{\Hypertarget{classWakeWord_1_1WakeWordIPC_af304616b24f8d23b8716c3c31457c2a4}\label{classWakeWord_1_1WakeWordIPC_af304616b24f8d23b8716c3c31457c2a4}} 
+virtual void {\bfseries send\+Command} (I\+P\+C\+Command)=0  throw ( std\+::exception )
+\item 
+\mbox{\Hypertarget{classWakeWord_1_1WakeWordIPC_ae3b0dccdf463d27141cb942853c9a008}\label{classWakeWord_1_1WakeWordIPC_ae3b0dccdf463d27141cb942853c9a008}} 
+virtual void {\bfseries init} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classWakeWord_1_1WakeWordIPC_a1cfa16e30c0ce47fbe759b0f31656a19}\label{classWakeWord_1_1WakeWordIPC_a1cfa16e30c0ce47fbe759b0f31656a19}} 
+static const char $\ast$ {\bfseries I\+P\+C\+Command\+Names} \mbox{[}$\,$\mbox{]} = \{ \char`\"{}N\+O\+NE\char`\"{} ,\char`\"{}I\+P\+C\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+CT\char`\"{} , \char`\"{}I\+P\+C\+\_\+\+W\+A\+K\+E\+\_\+\+W\+O\+R\+D\+\_\+\+D\+E\+T\+E\+C\+T\+ED\char`\"{} , \char`\"{}I\+P\+C\+\_\+\+P\+A\+U\+S\+E\+\_\+\+W\+A\+K\+E\+\_\+\+W\+O\+R\+D\+\_\+\+E\+N\+G\+I\+NE\char`\"{} , \char`\"{}I\+P\+C\+\_\+\+R\+E\+S\+U\+M\+E\+\_\+\+W\+A\+K\+E\+\_\+\+W\+O\+R\+D\+\_\+\+E\+N\+G\+I\+NE\char`\"{} , \char`\"{}I\+P\+C\+\_\+\+C\+O\+N\+F\+I\+RM\char`\"{} \}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classWakeWord_1_1WakeWordIPC_a4a2607bfe5d6baf62fc210b17822e7c5}\label{classWakeWord_1_1WakeWordIPC_a4a2607bfe5d6baf62fc210b17822e7c5}} 
+void {\bfseries wake\+Word\+Detected} ()
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/mutzi/progs/linux\+\_\+workspace/alexa-\/avs-\/prototype/src/include/wakewordipc.\+h\item 
+/home/mutzi/progs/linux\+\_\+workspace/alexa-\/avs-\/prototype/src/wakewordipc.\+cpp\end{DoxyCompactItemize}

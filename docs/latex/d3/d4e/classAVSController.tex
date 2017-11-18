@@ -1,0 +1,86 @@
+\hypertarget{classAVSController}{}\section{A\+V\+S\+Controller Class Reference}
+\label{classAVSController}\index{A\+V\+S\+Controller@{A\+V\+S\+Controller}}
+Inheritance diagram for A\+V\+S\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.536351cm]{d3/d4e/classAVSController}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAVSController_a63d0d4f3504598a6cf631d743221148c}\label{classAVSController_a63d0d4f3504598a6cf631d743221148c}} 
+{\bfseries A\+V\+S\+Controller} (\hyperlink{classWakeWord_1_1WakeWordIPCFactory}{Wake\+Word\+I\+P\+C\+Factory} $\ast$wake\+Word\+I\+P\+C\+Factory, \hyperlink{classWakeWord_1_1WakeWordDetectedHandler}{Wake\+Word\+Detected\+Handler} $\ast$wake\+Word\+Detected\+Handler)  throw ( std\+::exception )
+\item 
+\mbox{\Hypertarget{classAVSController_a7e82175b8fa5864d1ec17509dc0298c9}\label{classAVSController_a7e82175b8fa5864d1ec17509dc0298c9}} 
+void {\bfseries start\+A\+V\+S\+Client} (void)
+\item 
+\mbox{\Hypertarget{classAVSController_aaf6ac00abc79561f81fe932df6226ec0}\label{classAVSController_aaf6ac00abc79561f81fe932df6226ec0}} 
+void {\bfseries start\+Wake\+Word\+Server} (void)
+\item 
+\mbox{\Hypertarget{classAVSController_a68695f1c999d840021878ca1eaa4ac78}\label{classAVSController_a68695f1c999d840021878ca1eaa4ac78}} 
+void {\bfseries send\+Wake\+Word\+Signal} (I\+P\+C\+Command command)
+\item 
+\mbox{\Hypertarget{classAVSController_af4e3b90cc19b84dc38a6035dfa7fc700}\label{classAVSController_af4e3b90cc19b84dc38a6035dfa7fc700}} 
+void {\bfseries start\+Audio\+Streaming} (void)
+\item 
+\mbox{\Hypertarget{classAVSController_ab692b03c8cdb638ef397c2a983bb43b1}\label{classAVSController_ab692b03c8cdb638ef397c2a983bb43b1}} 
+void {\bfseries stop\+Audio\+Streaming} (void)
+\item 
+\mbox{\Hypertarget{classAVSController_ae0c0e24cfb2a347ceaf16698f1971c52}\label{classAVSController_ae0c0e24cfb2a347ceaf16698f1971c52}} 
+\hyperlink{classAVSClient}{A\+V\+S\+Client} $\ast$ {\bfseries get\+A\+V\+S\+Client} (void)
+\item 
+\mbox{\Hypertarget{classAVSController_a5e28e26ddb32663fe918809cd2da50b5}\label{classAVSController_a5e28e26ddb32663fe918809cd2da50b5}} 
+\hyperlink{classAVSConfigAuthenticator}{A\+V\+S\+Config\+Authenticator} $\ast$ {\bfseries get\+Authenticator} (void)
+\item 
+\mbox{\Hypertarget{classAVSController_ae1a6b6f95f9e2ac206e2724e33f57741}\label{classAVSController_ae1a6b6f95f9e2ac206e2724e33f57741}} 
+\hyperlink{classAVSPlayback}{A\+V\+S\+Playback} $\ast$ {\bfseries get\+A\+V\+S\+Playback\+Handle} (void)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAVSController_a00967eb8be7b2d3764acd1cb669ef775}\label{classAVSController_a00967eb8be7b2d3764acd1cb669ef775}} 
+static void {\bfseries playback\+\_\+thread} (\hyperlink{classAVSController}{A\+V\+S\+Controller} $\ast$controller, char $\ast$mp3data, size\+\_\+t mp3size)
+\item 
+\mbox{\Hypertarget{classAVSController_a6e5a0581df44aa4500d3ac7601e98494}\label{classAVSController_a6e5a0581df44aa4500d3ac7601e98494}} 
+static void {\bfseries playback\+\_\+mute\+\_\+thread} (\hyperlink{classAVSPlayback}{A\+V\+S\+Playback} $\ast$playback\+\_\+handle)
+\item 
+\mbox{\Hypertarget{classAVSController_ad6d9344629573dba5b0de01c1c9c56c8}\label{classAVSController_ad6d9344629573dba5b0de01c1c9c56c8}} 
+static void {\bfseries playback\+\_\+unmute\+\_\+thread} (\hyperlink{classAVSPlayback}{A\+V\+S\+Playback} $\ast$playback\+\_\+handle)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAVSController_a0f68ded5ebd1d728ca56e61a46ede630}\label{classAVSController_a0f68ded5ebd1d728ca56e61a46ede630}} 
+void {\bfseries on\+Stream\+Loop\+Start\+Event} (void)
+\item 
+\mbox{\Hypertarget{classAVSController_a67d0ffd826dc595aa23e8fdfe3e45422}\label{classAVSController_a67d0ffd826dc595aa23e8fdfe3e45422}} 
+void {\bfseries on\+Stream\+Loop\+Wait\+Event} (void)
+\item 
+\mbox{\Hypertarget{classAVSController_a93119243f11d797554d6a175f30ff391}\label{classAVSController_a93119243f11d797554d6a175f30ff391}} 
+void {\bfseries on\+Device\+Capture\+Open\+Event} (void)
+\item 
+\mbox{\Hypertarget{classAVSController_aca4f642e82b469cda941822ab74770c5}\label{classAVSController_aca4f642e82b469cda941822ab74770c5}} 
+void {\bfseries on\+Device\+Capture\+Close\+Event} (void)
+\item 
+\mbox{\Hypertarget{classAVSController_a149bd119bb25bf57850ac9978158d408}\label{classAVSController_a149bd119bb25bf57850ac9978158d408}} 
+void {\bfseries on\+Wake\+Word\+Detected} ()
+\item 
+\mbox{\Hypertarget{classAVSController_a81ab91d6a582db9636a82b3c9f620e63}\label{classAVSController_a81ab91d6a582db9636a82b3c9f620e63}} 
+void {\bfseries on\+Speech\+Recognize\+Stop\+Capture\+Directive} (const \hyperlink{classNetwork_1_1HTTP_1_1HTTPClientDirectiveEvent}{H\+T\+T\+P\+Client\+Directive\+Event} $\ast$event)
+\item 
+\mbox{\Hypertarget{classAVSController_a9fa9fb34684b7ea46f97926fbabbd31d}\label{classAVSController_a9fa9fb34684b7ea46f97926fbabbd31d}} 
+void {\bfseries on\+Speech\+Recognize\+Expect\+Speech\+Directive} (const \hyperlink{classNetwork_1_1HTTP_1_1HTTPClientDirectiveEvent}{H\+T\+T\+P\+Client\+Directive\+Event} $\ast$event)
+\item 
+\mbox{\Hypertarget{classAVSController_ae6275a874383c8be50efbc4b420eaab2}\label{classAVSController_ae6275a874383c8be50efbc4b420eaab2}} 
+void {\bfseries on\+Speech\+Synthesizer\+Speak\+Directive} (const \hyperlink{classNetwork_1_1HTTP_1_1HTTPClientDirectiveEvent}{H\+T\+T\+P\+Client\+Directive\+Event} $\ast$event)
+\item 
+\mbox{\Hypertarget{classAVSController_a9226e5badeb17e54fa2cb32f9973cc89}\label{classAVSController_a9226e5badeb17e54fa2cb32f9973cc89}} 
+void {\bfseries on\+Speeker\+Set\+Mute\+Directive} (const \hyperlink{classNetwork_1_1HTTP_1_1HTTPClientDirectiveEvent}{H\+T\+T\+P\+Client\+Directive\+Event} $\ast$event)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/mutzi/progs/linux\+\_\+workspace/alexa-\/avs-\/prototype/src/include/avscontroller.\+h\item 
+/home/mutzi/progs/linux\+\_\+workspace/alexa-\/avs-\/prototype/src/avscontroller.\+cpp\end{DoxyCompactItemize}

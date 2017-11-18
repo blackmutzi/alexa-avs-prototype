@@ -1,0 +1,54 @@
+\hypertarget{classAVSClient}{}\section{A\+V\+S\+Client Class Reference}
+\label{classAVSClient}\index{A\+V\+S\+Client@{A\+V\+S\+Client}}
+Inheritance diagram for A\+V\+S\+Client\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{d0/db9/classAVSClient}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAVSClient_ae0d7c3e648fc864ae436831e17f794e2}\label{classAVSClient_ae0d7c3e648fc864ae436831e17f794e2}} 
+{\bfseries A\+V\+S\+Client} (const std\+::string url, const std\+::string access\+\_\+token)
+\item 
+\mbox{\Hypertarget{classAVSClient_a23465de5d4163ee26d9576e721f6f0c6}\label{classAVSClient_a23465de5d4163ee26d9576e721f6f0c6}} 
+void {\bfseries add\+Listener} (\hyperlink{classAVSClientListener}{A\+V\+S\+Client\+Listener} $\ast$listener)
+\item 
+\mbox{\Hypertarget{classAVSClient_a634dd701d7f6f6e6bdb31d7f5abaa51c}\label{classAVSClient_a634dd701d7f6f6e6bdb31d7f5abaa51c}} 
+void {\bfseries remove\+Listener} (\hyperlink{classAVSClientListener}{A\+V\+S\+Client\+Listener} $\ast$listener)
+\item 
+\mbox{\Hypertarget{classAVSClient_a1f9560eb150c6ef158af1541c7cde899}\label{classAVSClient_a1f9560eb150c6ef158af1541c7cde899}} 
+void {\bfseries start} (void)
+\item 
+\mbox{\Hypertarget{classAVSClient_a013525f5bcb5608feda51c45504a1c38}\label{classAVSClient_a013525f5bcb5608feda51c45504a1c38}} 
+void {\bfseries restart} (void)
+\item 
+\mbox{\Hypertarget{classAVSClient_a3f4655c808ea71fc7d9192a277daca00}\label{classAVSClient_a3f4655c808ea71fc7d9192a277daca00}} 
+void {\bfseries change\+Access\+Token} (const std\+::string access\+\_\+token)
+\item 
+\mbox{\Hypertarget{classAVSClient_a9af7374fe03aa49a3557c3fd574a6c58}\label{classAVSClient_a9af7374fe03aa49a3557c3fd574a6c58}} 
+\hyperlink{classAVSRequestBuilder}{A\+V\+S\+Request\+Builder} $\ast$ {\bfseries get\+Request\+Builder} (void)
+\item 
+\mbox{\Hypertarget{classAVSClient_ac1d14f5bbf23b2b7c108887b45a7247f}\label{classAVSClient_ac1d14f5bbf23b2b7c108887b45a7247f}} 
+\hyperlink{structAVSJson_1_1SynchronizeStateEvent}{A\+V\+S\+Json\+::\+Synchronize\+State\+Event} $\ast$ {\bfseries get\+Sync\+State} (void)
+\item 
+\mbox{\Hypertarget{classAVSClient_a7ec5d02b02e8ea15e4d79c155bed41e7}\label{classAVSClient_a7ec5d02b02e8ea15e4d79c155bed41e7}} 
+bool {\bfseries is\+Active} (void)
+\item 
+\mbox{\Hypertarget{classAVSClient_ae11fec4bb36751971307088aa68e9c5d}\label{classAVSClient_ae11fec4bb36751971307088aa68e9c5d}} 
+\hyperlink{structNetwork_1_1HTTP2_1_1StreamQueueData}{Stream\+Queue\+Data} $\ast$ {\bfseries on\+Process\+Stream\+Event} (Stream\+Queue\+Event event)
+\item 
+\mbox{\Hypertarget{classAVSClient_a8d9ca62de50e2f1c8f9131277728b170}\label{classAVSClient_a8d9ca62de50e2f1c8f9131277728b170}} 
+void {\bfseries on\+Stream\+Loop\+Start\+Event} (void)
+\item 
+\mbox{\Hypertarget{classAVSClient_a8371fdf83e36adee3292958e13db684e}\label{classAVSClient_a8371fdf83e36adee3292958e13db684e}} 
+void {\bfseries on\+Stream\+Loop\+Wait\+Event} (void)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/mutzi/progs/linux\+\_\+workspace/alexa-\/avs-\/prototype/src/include/avsclient.\+h\item 
+/home/mutzi/progs/linux\+\_\+workspace/alexa-\/avs-\/prototype/src/avsclient.\+cpp\end{DoxyCompactItemize}
