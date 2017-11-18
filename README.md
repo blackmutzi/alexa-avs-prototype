@@ -24,14 +24,15 @@ go to config directory and modify ./src/config/config.json file
 cd ./alexa-avs-prototype/src/config/
 nano config.json 
 ```
-and write client_id, client_secret and product_id into the config. ( @see security-profile )
+and write client_id, client_secret and product_id into the config. ( @see amazon-security-profile )
 #### second Step
 start now prototype ...
 ```sh
 ./alexa-avs-prototype
 ```
 the avs-client show you a link, copy it in your Browser. Login Now ..
-and get the grant code, save the grant code in the ./alexa-avs-prototye/src/config/config.json file, finish.
+
+and get the grant code, save the grant code in the ./alexa-avs-prototype/src/config/config.json file, finish.
 
 # DEPENDS ( debian / raspbian packages )
 * libevent-dev ( version 2.0.5 )
