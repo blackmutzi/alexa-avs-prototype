@@ -10,16 +10,18 @@ env:
     - BUILD_OUTPUT_PATH=${TRAVIS_BUILD_DIR}
     - QMAKE_PARAMS="-spec linux-g++"
 
-install:
-  - echo "Installing..."
+before_install:
   - sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
   - sudo apt-get update -qq
+
+install:
+  - echo "Installing..."
   - sudo apt-get install libcurl4-gnutls-dev
   - sudo apt-get install libboost-all-dev
   - sudo apt-get install gcc-4.9
   - sudo apt-get install g++-4.9
-  - sudo update-alternatives --auto g++
-  - sudo update-alternatives --auto gcc
+  - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.9 100
+  - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.9 100
   - sudo add-apt-repository -y "deb http://de.archive.ubuntu.com/ubuntu artful main restricted universe multiverse"
   - sudo apt-get update -qq
   - sudo apt-get install libnghttp2-dev
