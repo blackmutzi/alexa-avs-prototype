@@ -1,9 +1,0 @@
-{
-     "header": {
-          "namespace": "SpeechRecognizer",
-          "name": "RecognizerState"
-      },
-      "payload": {
-          "wakeword": "{{WAKEWORD_STRING}}"
-      }
-}
