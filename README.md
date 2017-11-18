@@ -7,7 +7,6 @@ Project tested on Gentoo(x86_64) and Raspbian(arm).
 * A Linux Distribution with PulseAudio Support.
 * Amazon Developer Account.
 * Follow the steps [here](https://github.com/alexa/alexa-avs-sample-app/wiki/Raspberry-Pi) to create a security profile.
-* From Security Profile, you need ProductID, ClientID, and ClientSecret.
 * And a WakeWordEngine Client from [here]( https://github.com/alexa/alexa-avs-sample-app/tree/master/samples/wakeWordAgent ).
 
 # download && build
