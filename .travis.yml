@@ -12,7 +12,7 @@ env:
     - QTC_BUILD=/opt/${QT_MAJOR}/
     - QTC_SOURCE=${TRAVIS_BUILD_DIR}/${QTC_VERSION}
     - QTC_LIBRARY_BASENAME=lib/x86_64-linux-gnu
-    - PROJECT_PRO_FILE="myplugin.pro"
+    - PROJECT_PRO_FILE="AVS-Prototype.pro"
     - BUILD_OUTPUT_PATH=${TRAVIS_BUILD_DIR}
     - QMAKE_PARAMS="-spec linux-g++"
 
