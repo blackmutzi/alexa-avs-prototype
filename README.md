@@ -2,7 +2,8 @@
 # alexa-avs-prototype (c++) [![travis](https://travis-ci.org/blackmutzi/alexa-avs-prototype.svg?branch=master)](https://travis-ci.org/)
 Alexa Voice Service (AVS) client in c++ for raspberry pi or any Linux Distribution.
 Project tested on Gentoo(x86_64) and Raspbian(arm).
-( Prototype is deprecated use alexa-sdk-framewok/alexa-avs-client)
+
+The Prototype is deprecated use alexa-sdk-framewok/alexa-avs-client, is already released and has more improvment.
 
 # what you need?
 * A Linux Distribution with PulseAudio Support.
