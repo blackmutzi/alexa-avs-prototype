@@ -3,7 +3,7 @@
 Alexa Voice Service (AVS) client in c++ for raspberry pi or any Linux Distribution.
 Project tested on Gentoo(x86_64) and Raspbian(arm).
 
-The Prototype is deprecated use alexa-sdk-framewok/alexa-avs-client, is already released and has more improvment.
+The Prototype is deprecated use alexa-sdk-framewok/alexa-amazon-client, is already released and has more improvment.
 
 # what you need?
 * A Linux Distribution with PulseAudio Support.
